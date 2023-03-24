@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36318E7529CCE97600C3EC46 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 36318E7429CCE97600C3EC46 /* Lottie */; };
+		36318E7729CCED9400C3EC46 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318E7629CCED9400C3EC46 /* SwiftUIView.swift */; };
+		36318E9C29CCEF5C00C3EC46 /* Recovery Phrase.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9129CCEF5C00C3EC46 /* Recovery Phrase.tgs */; };
+		36318E9D29CCEF5C00C3EC46 /* Main.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9229CCEF5C00C3EC46 /* Main.tgs */; };
+		36318E9E29CCEF5C00C3EC46 /* Too Bad.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9329CCEF5C00C3EC46 /* Too Bad.tgs */; };
+		36318E9F29CCEF5C00C3EC46 /* Password.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9429CCEF5C00C3EC46 /* Password.tgs */; };
+		36318EA029CCEF5C00C3EC46 /* Created.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9529CCEF5C00C3EC46 /* Created.tgs */; };
+		36318EA129CCEF5C00C3EC46 /* Success.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9629CCEF5C00C3EC46 /* Success.tgs */; };
+		36318EA229CCEF5C00C3EC46 /* Waiting TON.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9729CCEF5C00C3EC46 /* Waiting TON.tgs */; };
+		36318EA329CCEF5C00C3EC46 /* Congratulations.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9829CCEF5C00C3EC46 /* Congratulations.tgs */; };
+		36318EA429CCEF5C00C3EC46 /* Start.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9929CCEF5C00C3EC46 /* Start.tgs */; };
+		36318EA529CCEF5C00C3EC46 /* Loading.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9A29CCEF5C00C3EC46 /* Loading.tgs */; };
+		36318EA629CCEF5C00C3EC46 /* Test Time.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */; };
+		36318EA829CCF74C00C3EC46 /* Starrt.json in Resources */ = {isa = PBXBuildFile; fileRef = 36318EA729CCF74C00C3EC46 /* Starrt.json */; };
+		36318EAA29CCFBEA00C3EC46 /* TGSToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318EA929CCFBEA00C3EC46 /* TGSToJSON.swift */; };
 		36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */; };
 		36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FD29CC8B3E0098FADB /* ContentView.swift */; };
 		36EE720029CC8B400098FADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EE71FF29CC8B400098FADB /* Assets.xcassets */; };
@@ -14,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36318E7629CCED9400C3EC46 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		36318E9129CCEF5C00C3EC46 /* Recovery Phrase.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recovery Phrase.tgs"; sourceTree = "<group>"; };
+		36318E9229CCEF5C00C3EC46 /* Main.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main.tgs; sourceTree = "<group>"; };
+		36318E9329CCEF5C00C3EC46 /* Too Bad.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Too Bad.tgs"; sourceTree = "<group>"; };
+		36318E9429CCEF5C00C3EC46 /* Password.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Password.tgs; sourceTree = "<group>"; };
+		36318E9529CCEF5C00C3EC46 /* Created.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Created.tgs; sourceTree = "<group>"; };
+		36318E9629CCEF5C00C3EC46 /* Success.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Success.tgs; sourceTree = "<group>"; };
+		36318E9729CCEF5C00C3EC46 /* Waiting TON.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Waiting TON.tgs"; sourceTree = "<group>"; };
+		36318E9829CCEF5C00C3EC46 /* Congratulations.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Congratulations.tgs; sourceTree = "<group>"; };
+		36318E9929CCEF5C00C3EC46 /* Start.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start.tgs; sourceTree = "<group>"; };
+		36318E9A29CCEF5C00C3EC46 /* Loading.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Loading.tgs; sourceTree = "<group>"; };
+		36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Test Time.tgs"; sourceTree = "<group>"; };
+		36318EA729CCF74C00C3EC46 /* Starrt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Starrt.json; sourceTree = "<group>"; };
+		36318EA929CCFBEA00C3EC46 /* TGSToJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGSToJSON.swift; sourceTree = "<group>"; };
 		36EE71F829CC8B3E0098FADB /* WalleTon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalleTon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalleTonApp.swift; sourceTree = "<group>"; };
 		36EE71FD29CC8B3E0098FADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +55,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36318E7529CCE97600C3EC46 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36318E9029CCEF5C00C3EC46 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				36318E9129CCEF5C00C3EC46 /* Recovery Phrase.tgs */,
+				36318E9229CCEF5C00C3EC46 /* Main.tgs */,
+				36318E9329CCEF5C00C3EC46 /* Too Bad.tgs */,
+				36318E9429CCEF5C00C3EC46 /* Password.tgs */,
+				36318E9529CCEF5C00C3EC46 /* Created.tgs */,
+				36318E9629CCEF5C00C3EC46 /* Success.tgs */,
+				36318E9729CCEF5C00C3EC46 /* Waiting TON.tgs */,
+				36318E9829CCEF5C00C3EC46 /* Congratulations.tgs */,
+				36318E9929CCEF5C00C3EC46 /* Start.tgs */,
+				36318E9A29CCEF5C00C3EC46 /* Loading.tgs */,
+				36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
 		36EE71EF29CC8B3E0098FADB = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +99,14 @@
 		36EE71FA29CC8B3E0098FADB /* WalleTon */ = {
 			isa = PBXGroup;
 			children = (
+				36318EA729CCF74C00C3EC46 /* Starrt.json */,
+				36318E9029CCEF5C00C3EC46 /* Stickers */,
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
 				36EE71FD29CC8B3E0098FADB /* ContentView.swift */,
 				36EE71FF29CC8B400098FADB /* Assets.xcassets */,
 				36EE720129CC8B400098FADB /* Preview Content */,
+				36318E7629CCED9400C3EC46 /* SwiftUIView.swift */,
+				36318EA929CCFBEA00C3EC46 /* TGSToJSON.swift */,
 			);
 			path = WalleTon;
 			sourceTree = "<group>";
@@ -83,6 +135,9 @@
 			dependencies = (
 			);
 			name = WalleTon;
+			packageProductDependencies = (
+				36318E7429CCE97600C3EC46 /* Lottie */,
+			);
 			productName = WalleTon;
 			productReference = 36EE71F829CC8B3E0098FADB /* WalleTon.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +154,7 @@
 				TargetAttributes = {
 					36EE71F729CC8B3E0098FADB = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -111,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 36EE71EF29CC8B3E0098FADB;
+			packageReferences = (
+				36318E7329CCE97600C3EC46 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 36EE71F929CC8B3E0098FADB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +184,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36318EA429CCEF5C00C3EC46 /* Start.tgs in Resources */,
+				36318EA129CCEF5C00C3EC46 /* Success.tgs in Resources */,
+				36318EA629CCEF5C00C3EC46 /* Test Time.tgs in Resources */,
+				36318E9C29CCEF5C00C3EC46 /* Recovery Phrase.tgs in Resources */,
+				36318E9D29CCEF5C00C3EC46 /* Main.tgs in Resources */,
+				36318EA029CCEF5C00C3EC46 /* Created.tgs in Resources */,
+				36318EA529CCEF5C00C3EC46 /* Loading.tgs in Resources */,
+				36318EA829CCF74C00C3EC46 /* Starrt.json in Resources */,
 				36EE720329CC8B400098FADB /* Preview Assets.xcassets in Resources */,
+				36318E9F29CCEF5C00C3EC46 /* Password.tgs in Resources */,
+				36318EA329CCEF5C00C3EC46 /* Congratulations.tgs in Resources */,
+				36318EA229CCEF5C00C3EC46 /* Waiting TON.tgs in Resources */,
+				36318E9E29CCEF5C00C3EC46 /* Too Bad.tgs in Resources */,
 				36EE720029CC8B400098FADB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */,
+				36318EAA29CCFBEA00C3EC46 /* TGSToJSON.swift in Sources */,
 				36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */,
+				36318E7729CCED9400C3EC46 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +387,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WalleTon-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36318E7329CCE97600C3EC46 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36318E7429CCE97600C3EC46 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36318E7329CCE97600C3EC46 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36EE71F029CC8B3E0098FADB /* Project object */;
 }
