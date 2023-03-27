@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3630DE0429D22CA900CEE04C /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0329D22CA900CEE04C /* AnimationView.swift */; };
+		3630DE0729D239C200CEE04C /* StickersEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0629D239C200CEE04C /* StickersEnum.swift */; };
+		3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0829D239EB00CEE04C /* AnimationError.swift */; };
 		36318E7529CCE97600C3EC46 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 36318E7429CCE97600C3EC46 /* Lottie */; };
-		36318E7729CCED9400C3EC46 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318E7629CCED9400C3EC46 /* SwiftUIView.swift */; };
 		36318E9C29CCEF5C00C3EC46 /* Recovery Phrase.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9129CCEF5C00C3EC46 /* Recovery Phrase.tgs */; };
 		36318E9D29CCEF5C00C3EC46 /* Main.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9229CCEF5C00C3EC46 /* Main.tgs */; };
 		36318E9E29CCEF5C00C3EC46 /* Too Bad.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9329CCEF5C00C3EC46 /* Too Bad.tgs */; };
@@ -20,8 +22,7 @@
 		36318EA429CCEF5C00C3EC46 /* Start.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9929CCEF5C00C3EC46 /* Start.tgs */; };
 		36318EA529CCEF5C00C3EC46 /* Loading.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9A29CCEF5C00C3EC46 /* Loading.tgs */; };
 		36318EA629CCEF5C00C3EC46 /* Test Time.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */; };
-		36318EA829CCF74C00C3EC46 /* Starrt.json in Resources */ = {isa = PBXBuildFile; fileRef = 36318EA729CCF74C00C3EC46 /* Starrt.json */; };
-		36318EAA29CCFBEA00C3EC46 /* TGSToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318EA929CCFBEA00C3EC46 /* TGSToJSON.swift */; };
+		36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318EA929CCFBEA00C3EC46 /* Zipper.swift */; };
 		36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */; };
 		36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FD29CC8B3E0098FADB /* ContentView.swift */; };
 		36EE720029CC8B400098FADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EE71FF29CC8B400098FADB /* Assets.xcassets */; };
@@ -29,7 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36318E7629CCED9400C3EC46 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		3630DE0329D22CA900CEE04C /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		3630DE0629D239C200CEE04C /* StickersEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersEnum.swift; sourceTree = "<group>"; };
+		3630DE0829D239EB00CEE04C /* AnimationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationError.swift; sourceTree = "<group>"; };
 		36318E9129CCEF5C00C3EC46 /* Recovery Phrase.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recovery Phrase.tgs"; sourceTree = "<group>"; };
 		36318E9229CCEF5C00C3EC46 /* Main.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main.tgs; sourceTree = "<group>"; };
 		36318E9329CCEF5C00C3EC46 /* Too Bad.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Too Bad.tgs"; sourceTree = "<group>"; };
@@ -41,8 +44,7 @@
 		36318E9929CCEF5C00C3EC46 /* Start.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start.tgs; sourceTree = "<group>"; };
 		36318E9A29CCEF5C00C3EC46 /* Loading.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Loading.tgs; sourceTree = "<group>"; };
 		36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Test Time.tgs"; sourceTree = "<group>"; };
-		36318EA729CCF74C00C3EC46 /* Starrt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Starrt.json; sourceTree = "<group>"; };
-		36318EA929CCFBEA00C3EC46 /* TGSToJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGSToJSON.swift; sourceTree = "<group>"; };
+		36318EA929CCFBEA00C3EC46 /* Zipper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
 		36EE71F829CC8B3E0098FADB /* WalleTon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalleTon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalleTonApp.swift; sourceTree = "<group>"; };
 		36EE71FD29CC8B3E0098FADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3630DE0529D239A200CEE04C /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				3630DE0329D22CA900CEE04C /* AnimationView.swift */,
+				3630DE0629D239C200CEE04C /* StickersEnum.swift */,
+				3630DE0829D239EB00CEE04C /* AnimationError.swift */,
+			);
+			path = AnimationView;
+			sourceTree = "<group>";
+		};
 		36318E9029CCEF5C00C3EC46 /* Stickers */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,14 +111,13 @@
 		36EE71FA29CC8B3E0098FADB /* WalleTon */ = {
 			isa = PBXGroup;
 			children = (
-				36318EA729CCF74C00C3EC46 /* Starrt.json */,
 				36318E9029CCEF5C00C3EC46 /* Stickers */,
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
 				36EE71FD29CC8B3E0098FADB /* ContentView.swift */,
+				3630DE0529D239A200CEE04C /* AnimationView */,
 				36EE71FF29CC8B400098FADB /* Assets.xcassets */,
 				36EE720129CC8B400098FADB /* Preview Content */,
-				36318E7629CCED9400C3EC46 /* SwiftUIView.swift */,
-				36318EA929CCFBEA00C3EC46 /* TGSToJSON.swift */,
+				36318EA929CCFBEA00C3EC46 /* Zipper.swift */,
 			);
 			path = WalleTon;
 			sourceTree = "<group>";
@@ -191,7 +202,6 @@
 				36318E9D29CCEF5C00C3EC46 /* Main.tgs in Resources */,
 				36318EA029CCEF5C00C3EC46 /* Created.tgs in Resources */,
 				36318EA529CCEF5C00C3EC46 /* Loading.tgs in Resources */,
-				36318EA829CCF74C00C3EC46 /* Starrt.json in Resources */,
 				36EE720329CC8B400098FADB /* Preview Assets.xcassets in Resources */,
 				36318E9F29CCEF5C00C3EC46 /* Password.tgs in Resources */,
 				36318EA329CCEF5C00C3EC46 /* Congratulations.tgs in Resources */,
@@ -209,9 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */,
-				36318EAA29CCFBEA00C3EC46 /* TGSToJSON.swift in Sources */,
+				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
+				3630DE0429D22CA900CEE04C /* AnimationView.swift in Sources */,
+				3630DE0729D239C200CEE04C /* StickersEnum.swift in Sources */,
+				36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */,
 				36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */,
-				36318E7729CCED9400C3EC46 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
