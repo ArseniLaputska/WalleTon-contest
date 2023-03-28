@@ -10,6 +10,9 @@
 		3630DE0429D22CA900CEE04C /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0329D22CA900CEE04C /* AnimationView.swift */; };
 		3630DE0729D239C200CEE04C /* StickersEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0629D239C200CEE04C /* StickersEnum.swift */; };
 		3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0829D239EB00CEE04C /* AnimationError.swift */; };
+		3630DE0C29D2E73300CEE04C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0B29D2E73300CEE04C /* StartView.swift */; };
+		3630DE0E29D2EAED00CEE04C /* DefaultButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0D29D2EAED00CEE04C /* DefaultButtonView.swift */; };
+		3630DE1029D2FD7100CEE04C /* CircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630DE0F29D2FD7100CEE04C /* CircleAnimation.swift */; };
 		36318E7529CCE97600C3EC46 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 36318E7429CCE97600C3EC46 /* Lottie */; };
 		36318E9C29CCEF5C00C3EC46 /* Recovery Phrase.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9129CCEF5C00C3EC46 /* Recovery Phrase.tgs */; };
 		36318E9D29CCEF5C00C3EC46 /* Main.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9229CCEF5C00C3EC46 /* Main.tgs */; };
@@ -23,6 +26,13 @@
 		36318EA529CCEF5C00C3EC46 /* Loading.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9A29CCEF5C00C3EC46 /* Loading.tgs */; };
 		36318EA629CCEF5C00C3EC46 /* Test Time.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */; };
 		36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318EA929CCFBEA00C3EC46 /* Zipper.swift */; };
+		36A6557429D30566004420A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557329D30566004420A1 /* ColorExtension.swift */; };
+		36A6557629D30989004420A1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557529D30989004420A1 /* FontExtension.swift */; };
+		36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557729D30A84004420A1 /* CongratulationsView.swift */; };
+		36A6557A29D30DAC004420A1 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557929D30DAC004420A1 /* TitleView.swift */; };
+		36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557B29D30DFC004420A1 /* DescrView.swift */; };
+		36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557D29D30E85004420A1 /* RecoveryPhraseView.swift */; };
+		36A6558029D31CB7004420A1 /* PhraseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557F29D31CB7004420A1 /* PhraseTableView.swift */; };
 		36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */; };
 		36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FD29CC8B3E0098FADB /* ContentView.swift */; };
 		36EE720029CC8B400098FADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EE71FF29CC8B400098FADB /* Assets.xcassets */; };
@@ -33,6 +43,9 @@
 		3630DE0329D22CA900CEE04C /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		3630DE0629D239C200CEE04C /* StickersEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersEnum.swift; sourceTree = "<group>"; };
 		3630DE0829D239EB00CEE04C /* AnimationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationError.swift; sourceTree = "<group>"; };
+		3630DE0B29D2E73300CEE04C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		3630DE0D29D2EAED00CEE04C /* DefaultButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonView.swift; sourceTree = "<group>"; };
+		3630DE0F29D2FD7100CEE04C /* CircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimation.swift; sourceTree = "<group>"; };
 		36318E9129CCEF5C00C3EC46 /* Recovery Phrase.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recovery Phrase.tgs"; sourceTree = "<group>"; };
 		36318E9229CCEF5C00C3EC46 /* Main.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main.tgs; sourceTree = "<group>"; };
 		36318E9329CCEF5C00C3EC46 /* Too Bad.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Too Bad.tgs"; sourceTree = "<group>"; };
@@ -45,6 +58,13 @@
 		36318E9A29CCEF5C00C3EC46 /* Loading.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Loading.tgs; sourceTree = "<group>"; };
 		36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Test Time.tgs"; sourceTree = "<group>"; };
 		36318EA929CCFBEA00C3EC46 /* Zipper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
+		36A6557329D30566004420A1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		36A6557529D30989004420A1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		36A6557729D30A84004420A1 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
+		36A6557929D30DAC004420A1 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		36A6557B29D30DFC004420A1 /* DescrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescrView.swift; sourceTree = "<group>"; };
+		36A6557D29D30E85004420A1 /* RecoveryPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPhraseView.swift; sourceTree = "<group>"; };
+		36A6557F29D31CB7004420A1 /* PhraseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseTableView.swift; sourceTree = "<group>"; };
 		36EE71F829CC8B3E0098FADB /* WalleTon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalleTon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalleTonApp.swift; sourceTree = "<group>"; };
 		36EE71FD29CC8B3E0098FADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +92,16 @@
 				3630DE0829D239EB00CEE04C /* AnimationError.swift */,
 			);
 			path = AnimationView;
+			sourceTree = "<group>";
+		};
+		3630DE0A29D2E6D500CEE04C /* CreateWallet */ = {
+			isa = PBXGroup;
+			children = (
+				3630DE0B29D2E73300CEE04C /* StartView.swift */,
+				36A6557729D30A84004420A1 /* CongratulationsView.swift */,
+				36A6557D29D30E85004420A1 /* RecoveryPhraseView.swift */,
+			);
+			path = CreateWallet;
 			sourceTree = "<group>";
 		};
 		36318E9029CCEF5C00C3EC46 /* Stickers */ = {
@@ -111,13 +141,21 @@
 		36EE71FA29CC8B3E0098FADB /* WalleTon */ = {
 			isa = PBXGroup;
 			children = (
+				3630DE0A29D2E6D500CEE04C /* CreateWallet */,
 				36318E9029CCEF5C00C3EC46 /* Stickers */,
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
 				36EE71FD29CC8B3E0098FADB /* ContentView.swift */,
 				3630DE0529D239A200CEE04C /* AnimationView */,
+				36318EA929CCFBEA00C3EC46 /* Zipper.swift */,
 				36EE71FF29CC8B400098FADB /* Assets.xcassets */,
 				36EE720129CC8B400098FADB /* Preview Content */,
-				36318EA929CCFBEA00C3EC46 /* Zipper.swift */,
+				3630DE0D29D2EAED00CEE04C /* DefaultButtonView.swift */,
+				3630DE0F29D2FD7100CEE04C /* CircleAnimation.swift */,
+				36A6557329D30566004420A1 /* ColorExtension.swift */,
+				36A6557529D30989004420A1 /* FontExtension.swift */,
+				36A6557929D30DAC004420A1 /* TitleView.swift */,
+				36A6557B29D30DFC004420A1 /* DescrView.swift */,
+				36A6557F29D31CB7004420A1 /* PhraseTableView.swift */,
 			);
 			path = WalleTon;
 			sourceTree = "<group>";
@@ -218,12 +256,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */,
 				36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */,
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
+				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
+				3630DE1029D2FD7100CEE04C /* CircleAnimation.swift in Sources */,
 				3630DE0429D22CA900CEE04C /* AnimationView.swift in Sources */,
+				36A6558029D31CB7004420A1 /* PhraseTableView.swift in Sources */,
+				36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */,
 				3630DE0729D239C200CEE04C /* StickersEnum.swift in Sources */,
 				36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */,
 				36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */,
+				3630DE0E29D2EAED00CEE04C /* DefaultButtonView.swift in Sources */,
+				3630DE0C29D2E73300CEE04C /* StartView.swift in Sources */,
+				36A6557629D30989004420A1 /* FontExtension.swift in Sources */,
+				36A6557A29D30DAC004420A1 /* TitleView.swift in Sources */,
+				36A6557429D30566004420A1 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -334,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -349,10 +397,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalleTon/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TSDW7DG47P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -360,6 +409,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,10 +429,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalleTon/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TSDW7DG47P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -390,6 +441,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
