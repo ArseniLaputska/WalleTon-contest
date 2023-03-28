@@ -9,7 +9,7 @@ import SwiftUI
 import Lottie
 
 struct AnimationView: UIViewRepresentable {
-    
+
     let sticker: Stickers
     
     func makeUIView(context: UIViewRepresentableContext<AnimationView>) -> UIView {
