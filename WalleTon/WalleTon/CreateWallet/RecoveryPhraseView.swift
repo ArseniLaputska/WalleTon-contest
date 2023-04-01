@@ -13,16 +13,15 @@ struct RecoveryPhraseView: View {
     
     var body: some View {
         ScrollView {
-//            ZStack {
+            ZStack {
                 VStack {
                     AnimationView(sticker: .recovery)
+                        .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: 124, maxHeight: 124)
                         .padding(.top, 26.0)
-                        .padding(.horizontal, 133.0)
-                        .padding(.bottom, 20.0)
-                        .fixedSize(horizontal: true, vertical: true)
                     
                     TitleView(title: "Your Recovery Phrase")
+                        .padding(.top, 20.0)
                     
                     DescriptionView(descr: "Write down these 24 words in this exact order and keep them in a secure place. Do not share this list with anyone. If you lose it, you will irrevocably lose access to your TON account.")
                         .fixedSize(horizontal: false, vertical: true)
@@ -34,11 +33,11 @@ struct RecoveryPhraseView: View {
                     
                     MainButton(label: "Done", action: {
                         
-                    }).fixedSize(horizontal: false, vertical: false)
+                    })
                     
                 }
-                .frame(maxHeight: .infinity)
-//            }
+            }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         }
     }
 }

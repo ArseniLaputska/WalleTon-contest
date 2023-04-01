@@ -34,7 +34,6 @@
 		36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557D29D30E85004420A1 /* RecoveryPhraseView.swift */; };
 		36A6558029D31CB7004420A1 /* PhraseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557F29D31CB7004420A1 /* PhraseTableView.swift */; };
 		36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */; };
-		36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71FD29CC8B3E0098FADB /* ContentView.swift */; };
 		36EE720029CC8B400098FADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EE71FF29CC8B400098FADB /* Assets.xcassets */; };
 		36EE720329CC8B400098FADB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EE720229CC8B400098FADB /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -67,7 +66,6 @@
 		36A6557F29D31CB7004420A1 /* PhraseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseTableView.swift; sourceTree = "<group>"; };
 		36EE71F829CC8B3E0098FADB /* WalleTon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalleTon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalleTonApp.swift; sourceTree = "<group>"; };
-		36EE71FD29CC8B3E0098FADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		36EE71FF29CC8B400098FADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36EE720229CC8B400098FADB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +142,6 @@
 				3630DE0A29D2E6D500CEE04C /* CreateWallet */,
 				36318E9029CCEF5C00C3EC46 /* Stickers */,
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
-				36EE71FD29CC8B3E0098FADB /* ContentView.swift */,
 				3630DE0529D239A200CEE04C /* AnimationView */,
 				36318EA929CCFBEA00C3EC46 /* Zipper.swift */,
 				36EE71FF29CC8B400098FADB /* Assets.xcassets */,
@@ -257,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */,
-				36EE71FE29CC8B3E0098FADB /* ContentView.swift in Sources */,
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
 				3630DE1029D2FD7100CEE04C /* CircleAnimation.swift in Sources */,

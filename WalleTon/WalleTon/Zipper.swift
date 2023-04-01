@@ -10,15 +10,15 @@ import zlib
 
 class Zipper {
     
-    func isGzippedData(_ data: NSData) -> Bool {
-        let bytes = data.bytes.bindMemory(to: UInt8.self, capacity: data.length)
-        return data.length >= 2 && bytes[0] == 0x1f && bytes[1] == 0x8b
-    }
+//    func isGzippedData(_ data: NSData) -> Bool {
+//        let bytes = UnsafeRawPointer<UInt8>(data.bytes)
+//        return (data.length >= 2  && bytes[0] == 0x1f && bytes[1] == 0x8b)
+//    }
     
     func gzipData(_ data: NSData, _ level: Float) -> NSData {
-        if (data.length == 0 || isGzippedData(data)) {
-            return data
-        }
+//        if (data.length == 0 || isGzippedData(data)) {
+//            return data
+//        }
         
         var stream = z_stream()
         stream.zalloc = nil
