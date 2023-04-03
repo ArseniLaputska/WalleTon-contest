@@ -10,4 +10,5 @@ import SwiftUI
 extension Color {
     static let accent = Color("Accent")
     static let textSecondary = Color("Secondary")
+    static let textField = Color("TextFieldColor")
 }

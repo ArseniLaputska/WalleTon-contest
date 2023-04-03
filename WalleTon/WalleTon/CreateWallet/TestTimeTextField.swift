@@ -9,12 +9,20 @@ import SwiftUI
 
 struct TestTimeTextField: View {
     
+    var number: String
     @Binding var text: String
     
     var body: some View {
         HStack {
-            Text("5:")
+            Text(number)
+                .padding(.leading, 20)
+                .foregroundColor(.secondary)
+            
             TextField("", text: $text)
+                .foregroundColor(.primary)
         }
+        .frame(maxHeight: 50)
+        .background(Color.textField)
+        .cornerRadius(10)
     }
 }

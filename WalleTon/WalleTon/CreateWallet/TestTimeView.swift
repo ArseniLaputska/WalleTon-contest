@@ -12,6 +12,7 @@ struct TestTimeView: View {
     
     @State private var showAlert: Bool = false
     @State var textField: String = ""
+    @State var numbers: [String] = ["5:", "15:", "18:"]
     
     var body: some View {
         ZStack {
@@ -23,13 +24,21 @@ struct TestTimeView: View {
                 
                 TitleView(title: "Your Recovery Phrase")
                     .padding(.top, 20.0)
-                    .padding(.bottom, 36.0)
-                
-                //TODO text fields
-//                TestTimeTextField(text: $textField)
+                    .padding(.bottom, 12.0)
                 
                 DescriptionView(descr: "Let’s check that you wrote them down correctly. Please enter the words 5, 15 and 18.")
                     .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 36.0)
+                
+                VStack(spacing: 16.0) {
+                    TestTimeTextField(number: "5:", text: $textField)
+                    
+                    TestTimeTextField(number: "15:", text: $textField)
+                    
+                    TestTimeTextField(number: "18:", text: $textField)
+                    
+                }
+                .padding(.horizontal, 48.0)
                 
                 MainButton(label: "Continue", action: {
                     showAlert.toggle()
@@ -48,6 +57,7 @@ struct TestTimeView: View {
                     return Alert(title: titleView, message: messageView, primaryButton: primaryButton, secondaryButton: secondaryButton)
                     
                 })
+                .padding(.top, 16.0)
                 
             }
         }
