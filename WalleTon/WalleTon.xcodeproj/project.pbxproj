@@ -28,6 +28,8 @@
 		36318EA529CCEF5C00C3EC46 /* Loading.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9A29CCEF5C00C3EC46 /* Loading.tgs */; };
 		36318EA629CCEF5C00C3EC46 /* Test Time.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */; };
 		36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318EA929CCFBEA00C3EC46 /* Zipper.swift */; };
+		3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21829DE01D300E28FC9 /* PasscodeView.swift */; };
+		3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */; };
 		36A6557429D30566004420A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557329D30566004420A1 /* ColorExtension.swift */; };
 		36A6557629D30989004420A1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557529D30989004420A1 /* FontExtension.swift */; };
 		36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557729D30A84004420A1 /* CongratulationsView.swift */; };
@@ -61,6 +63,8 @@
 		36318E9A29CCEF5C00C3EC46 /* Loading.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Loading.tgs; sourceTree = "<group>"; };
 		36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Test Time.tgs"; sourceTree = "<group>"; };
 		36318EA929CCFBEA00C3EC46 /* Zipper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
+		3675C21829DE01D300E28FC9 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextFieldView.swift; sourceTree = "<group>"; };
 		36A6557329D30566004420A1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		36A6557529D30989004420A1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		36A6557729D30A84004420A1 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				36A6557D29D30E85004420A1 /* RecoveryPhraseView.swift */,
 				362E114B29D986EE00D09F04 /* TestTimeView.swift */,
 				362E114D29D9E5AF00D09F04 /* TestTimeTextField.swift */,
+				3675C21829DE01D300E28FC9 /* PasscodeView.swift */,
+				3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */,
 			);
 			path = CreateWallet;
 			sourceTree = "<group>";
@@ -260,11 +266,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */,
+				3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */,
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
 				3630DE1029D2FD7100CEE04C /* CircleAnimation.swift in Sources */,
 				3630DE0429D22CA900CEE04C /* AnimationView.swift in Sources */,
 				36A6558029D31CB7004420A1 /* PhraseTableView.swift in Sources */,
+				3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */,
 				36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */,
 				362E114C29D986EE00D09F04 /* TestTimeView.swift in Sources */,
 				3630DE0729D239C200CEE04C /* StickersEnum.swift in Sources */,

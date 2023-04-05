@@ -16,6 +16,5 @@ struct DescriptionView: View {
             .font(.bodyRegular())
             .multilineTextAlignment(.center)
             .padding(.horizontal, 32.0)
-            .padding(.top, 12.0)
     }
 }
