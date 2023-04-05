@@ -9,8 +9,9 @@ import SwiftUI
 
 struct PasscodeCircleView: View {
     
-    @State var passcode: String
-    @State private var lenghtOfPasscode: Int = 4
+    @Binding var passcode: String
+    @Binding var lengthOfPasscode: Int
+    
     @State private var showOptions: Bool = false
     
     var body: some View {
@@ -25,7 +26,7 @@ struct PasscodeCircleView: View {
                 .background(Color.clear)
                 .background(
                     HStack(spacing: 16) {
-                        ForEach(0..<lenghtOfPasscode, id: \.self) { index in
+                        ForEach(0..<lengthOfPasscode, id: \.self) { index in
                         Circle()
                             .foregroundColor(passcode.count > index ? .black : .white)
                             .frame(width: 16, height: 16)
@@ -40,15 +41,18 @@ struct PasscodeCircleView: View {
             Menu("Passcode options", content: {
         
                 Button("6-digit code", action: {
-                    lenghtOfPasscode = 6
+                    lengthOfPasscode = 6
                 })
                 
                 Button("4-digit code", action: {
-                    lenghtOfPasscode = 4
+                    lengthOfPasscode = 4
                 })
                 
             })
             .padding(.top, 73)
+            .onChange(of: lengthOfPasscode) { newValue in
+                passcode = ""
+            }
         }
     }
 }
