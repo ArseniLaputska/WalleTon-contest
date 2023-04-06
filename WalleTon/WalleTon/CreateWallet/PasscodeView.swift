@@ -10,6 +10,7 @@ import SwiftUI
 struct PasscodeView: View {
     
     @State private var passcode: String = ""
+    @State private var confirmPasscode: String = ""
     @State private var title: String = "Set a passcode"
     @State private var passcodeLength: Int = 4
     
@@ -28,7 +29,13 @@ struct PasscodeView: View {
                 DescriptionView(descr: "Enter the \(passcodeLength == 4 ? "4" : "6") digits in the passcode.")
                     .padding(.bottom, 28.0)
                 
-                PasscodeCircleView(passcode: $passcode, lengthOfPasscode: $passcodeLength)
+                if passcode.count != passcodeLength {
+                    PasscodeCircleView(passcode: $passcode, lengthOfPasscode: $passcodeLength)
+                } else {
+                    PasscodeCircleView(passcode: $confirmPasscode, lengthOfPasscode: $passcodeLength)
+                }
+                
+                //TODO naviation link to next view is password matches else show error
                 
             }
         }
