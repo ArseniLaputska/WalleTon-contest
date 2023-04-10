@@ -32,6 +32,7 @@
 		3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */; };
 		369D252D29DF372400B89B94 /* FaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D252C29DF372400B89B94 /* FaceIDView.swift */; };
 		369D252F29E2042900B89B94 /* TouchIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D252E29E2042900B89B94 /* TouchIDView.swift */; };
+		369DDB7029E4A82B00A42746 /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB6F29E4A82B00A42746 /* DoneView.swift */; };
 		36A6557429D30566004420A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557329D30566004420A1 /* ColorExtension.swift */; };
 		36A6557629D30989004420A1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557529D30989004420A1 /* FontExtension.swift */; };
 		36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557729D30A84004420A1 /* CongratulationsView.swift */; };
@@ -69,6 +70,7 @@
 		3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextFieldView.swift; sourceTree = "<group>"; };
 		369D252C29DF372400B89B94 /* FaceIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDView.swift; sourceTree = "<group>"; };
 		369D252E29E2042900B89B94 /* TouchIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDView.swift; sourceTree = "<group>"; };
+		369DDB6F29E4A82B00A42746 /* DoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
 		36A6557329D30566004420A1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		36A6557529D30989004420A1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		36A6557729D30A84004420A1 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */,
 				369D252C29DF372400B89B94 /* FaceIDView.swift */,
 				369D252E29E2042900B89B94 /* TouchIDView.swift */,
+				369DDB6F29E4A82B00A42746 /* DoneView.swift */,
 			);
 			path = CreateWallet;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */,
 				3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */,
+				369DDB7029E4A82B00A42746 /* DoneView.swift in Sources */,
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
 				3630DE1029D2FD7100CEE04C /* CircleAnimation.swift in Sources */,
