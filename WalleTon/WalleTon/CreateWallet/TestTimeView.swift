@@ -31,11 +31,11 @@ struct TestTimeView: View {
                     .padding(.bottom, 36.0)
                 
                 VStack(spacing: 16.0) {
-                    TestTimeTextField(number: "5:", text: $textField)
+                    TestTimeTextField(number: 5, text: $textField)
                     
-                    TestTimeTextField(number: "15:", text: $textField)
+                    TestTimeTextField(number: 15, text: $textField)
                     
-                    TestTimeTextField(number: "18:", text: $textField)
+                    TestTimeTextField(number: 18, text: $textField)
                     
                 }
                 .padding(.horizontal, 48.0)

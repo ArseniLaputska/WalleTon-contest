@@ -33,6 +33,9 @@
 		369D252D29DF372400B89B94 /* FaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D252C29DF372400B89B94 /* FaceIDView.swift */; };
 		369D252F29E2042900B89B94 /* TouchIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D252E29E2042900B89B94 /* TouchIDView.swift */; };
 		369DDB7029E4A82B00A42746 /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB6F29E4A82B00A42746 /* DoneView.swift */; };
+		369DDB7329E4ACC700A42746 /* StartImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7229E4ACC700A42746 /* StartImportView.swift */; };
+		369DDB7529E4B14000A42746 /* ImportSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7429E4B14000A42746 /* ImportSuccessView.swift */; };
+		369DDB7729E4B1B100A42746 /* PhraselessImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7629E4B1B100A42746 /* PhraselessImportView.swift */; };
 		36A6557429D30566004420A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557329D30566004420A1 /* ColorExtension.swift */; };
 		36A6557629D30989004420A1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557529D30989004420A1 /* FontExtension.swift */; };
 		36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557729D30A84004420A1 /* CongratulationsView.swift */; };
@@ -71,6 +74,9 @@
 		369D252C29DF372400B89B94 /* FaceIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDView.swift; sourceTree = "<group>"; };
 		369D252E29E2042900B89B94 /* TouchIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDView.swift; sourceTree = "<group>"; };
 		369DDB6F29E4A82B00A42746 /* DoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
+		369DDB7229E4ACC700A42746 /* StartImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartImportView.swift; sourceTree = "<group>"; };
+		369DDB7429E4B14000A42746 /* ImportSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSuccessView.swift; sourceTree = "<group>"; };
+		369DDB7629E4B1B100A42746 /* PhraselessImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraselessImportView.swift; sourceTree = "<group>"; };
 		36A6557329D30566004420A1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		36A6557529D30989004420A1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		36A6557729D30A84004420A1 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				3630DE0B29D2E73300CEE04C /* StartView.swift */,
 				36A6557729D30A84004420A1 /* CongratulationsView.swift */,
 				36A6557D29D30E85004420A1 /* RecoveryPhraseView.swift */,
+				36A6557F29D31CB7004420A1 /* PhraseTableView.swift */,
 				362E114B29D986EE00D09F04 /* TestTimeView.swift */,
 				362E114D29D9E5AF00D09F04 /* TestTimeTextField.swift */,
 				3675C21829DE01D300E28FC9 /* PasscodeView.swift */,
@@ -141,6 +148,16 @@
 			path = Stickers;
 			sourceTree = "<group>";
 		};
+		369DDB7129E4ACB100A42746 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				369DDB7229E4ACC700A42746 /* StartImportView.swift */,
+				369DDB7429E4B14000A42746 /* ImportSuccessView.swift */,
+				369DDB7629E4B1B100A42746 /* PhraselessImportView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
 		36EE71EF29CC8B3E0098FADB = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				3630DE0A29D2E6D500CEE04C /* CreateWallet */,
+				369DDB7129E4ACB100A42746 /* Import */,
 				36318E9029CCEF5C00C3EC46 /* Stickers */,
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
 				3630DE0529D239A200CEE04C /* AnimationView */,
@@ -173,7 +191,6 @@
 				36A6557529D30989004420A1 /* FontExtension.swift */,
 				36A6557929D30DAC004420A1 /* TitleView.swift */,
 				36A6557B29D30DFC004420A1 /* DescrView.swift */,
-				36A6557F29D31CB7004420A1 /* PhraseTableView.swift */,
 			);
 			path = WalleTon;
 			sourceTree = "<group>";
@@ -276,12 +293,15 @@
 			files = (
 				36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */,
 				3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */,
+				369DDB7729E4B1B100A42746 /* PhraselessImportView.swift in Sources */,
 				369DDB7029E4A82B00A42746 /* DoneView.swift in Sources */,
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
+				369DDB7329E4ACC700A42746 /* StartImportView.swift in Sources */,
 				3630DE1029D2FD7100CEE04C /* CircleAnimation.swift in Sources */,
 				3630DE0429D22CA900CEE04C /* AnimationView.swift in Sources */,
 				36A6558029D31CB7004420A1 /* PhraseTableView.swift in Sources */,
+				369DDB7529E4B14000A42746 /* ImportSuccessView.swift in Sources */,
 				3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */,
 				36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */,
 				362E114C29D986EE00D09F04 /* TestTimeView.swift in Sources */,

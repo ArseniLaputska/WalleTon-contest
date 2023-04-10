@@ -9,12 +9,12 @@ import SwiftUI
 
 struct TestTimeTextField: View {
     
-    var number: String
+    var number: Int
     @Binding var text: String
     
     var body: some View {
         HStack {
-            Text(number)
+            Text("\(number)" + ":")
                 .padding(.leading, 20)
                 .foregroundColor(.secondary)
             
