@@ -44,7 +44,7 @@ struct StartImportView: View {
                     }
                     .padding(.horizontal, 48.0)
                     
-                    MainButton(label: "Continue", action: {
+                    CreateButton(label: "Continue", action: {
                         showAlert.toggle()
                         secondClick.toggle()
                         

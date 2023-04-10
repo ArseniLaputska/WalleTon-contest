@@ -19,7 +19,7 @@ struct ImportSuccessView: View {
                     .padding(.top, 20.0)
                     .padding(.bottom, 150.0)
 
-                MainButton(label: "View my wallet", action: {
+                CreateButton(label: "View my wallet", action: {
                     
                 })
             }

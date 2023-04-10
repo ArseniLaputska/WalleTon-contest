@@ -7,7 +7,28 @@
 
 import SwiftUI
 
-struct MainButton: View {
+struct MainButton<Label: View>: View {
+    
+    @ViewBuilder var label: () -> Label
+    var action: () async -> Void
+    
+    var body: some View {
+        DefaultButtonView(action: action, label: label)
+            .frame(maxWidth: .infinity, maxHeight: 50)
+            .background(Color.accent)
+            .cornerRadius(12)
+        
+        //                            {
+        //            Text(label)
+        //                .font(.bodySemibold())
+        //                .frame(maxWidth: .infinity, maxHeight: 50)
+        //                .foregroundColor(.white)
+        //        })
+        //    }
+    }
+}
+
+struct CreateButton: View {
     
     var label: String
     var action: () async -> Void

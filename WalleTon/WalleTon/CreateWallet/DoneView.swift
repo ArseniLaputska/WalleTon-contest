@@ -22,7 +22,7 @@ struct DoneView: View {
                 DescriptionView(descr: "You are all set. Now you have a wallet that only you control — directly, without middlemen or bankers.")
                     .padding(.bottom, 154.0)
                 
-                MainButton(label: "View my wallet", action: {
+                CreateButton(label: "View my wallet", action: {
                     
                 })
             }

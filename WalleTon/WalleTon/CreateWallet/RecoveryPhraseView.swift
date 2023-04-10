@@ -34,7 +34,7 @@ struct RecoveryPhraseView: View {
                         .padding(.horizontal, 45.0)
                         .padding(.bottom, 52.0)
                     
-                    MainButton(label: "Done", action: {
+                    CreateButton(label: "Done", action: {
                         showAlert.toggle()
                         secondClick.toggle()
                         

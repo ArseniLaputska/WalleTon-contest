@@ -26,7 +26,7 @@ struct TouchIDView: View {
                     .padding(.bottom, 154.0)
                 
                 
-                MainButton(label: "Enable Touch ID", action: {
+                CreateButton(label: "Enable Touch ID", action: {
                     
                 })
                 .padding(.bottom, 16.0)

@@ -26,7 +26,7 @@ struct FaceIDView: View {
                     .padding(.bottom, 154.0)
                 
                 
-                MainButton(label: "Enable Face ID", action: {
+                CreateButton(label: "Enable Face ID", action: {
                     
                 })
                 .padding(.bottom, 16.0)

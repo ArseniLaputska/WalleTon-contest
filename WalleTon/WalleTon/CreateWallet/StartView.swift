@@ -24,7 +24,7 @@ struct StartView: View {
                 
                 Spacer()
                 
-                MainButton(label: "Create my wallet", action: {
+                CreateButton(label: "Create my wallet", action: {
                     
                 })
                 

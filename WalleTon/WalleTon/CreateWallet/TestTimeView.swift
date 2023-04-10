@@ -40,7 +40,7 @@ struct TestTimeView: View {
                 }
                 .padding(.horizontal, 48.0)
                 
-                MainButton(label: "Continue", action: {
+                CreateButton(label: "Continue", action: {
                     showAlert.toggle()
                     
                 }).alert(isPresented: $showAlert, content: {

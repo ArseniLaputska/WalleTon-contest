@@ -36,6 +36,9 @@
 		369DDB7329E4ACC700A42746 /* StartImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7229E4ACC700A42746 /* StartImportView.swift */; };
 		369DDB7529E4B14000A42746 /* ImportSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7429E4B14000A42746 /* ImportSuccessView.swift */; };
 		369DDB7729E4B1B100A42746 /* PhraselessImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7629E4B1B100A42746 /* PhraselessImportView.swift */; };
+		369DDB7A29E4B2D000A42746 /* MainLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7929E4B2D000A42746 /* MainLoading.swift */; };
+		369DDB7C29E4BB1F00A42746 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7B29E4BB1F00A42746 /* MainNavigationView.swift */; };
+		369DDB7E29E4BBB800A42746 /* MainButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7D29E4BBB800A42746 /* MainButtonsView.swift */; };
 		36A6557429D30566004420A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557329D30566004420A1 /* ColorExtension.swift */; };
 		36A6557629D30989004420A1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557529D30989004420A1 /* FontExtension.swift */; };
 		36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557729D30A84004420A1 /* CongratulationsView.swift */; };
@@ -77,6 +80,9 @@
 		369DDB7229E4ACC700A42746 /* StartImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartImportView.swift; sourceTree = "<group>"; };
 		369DDB7429E4B14000A42746 /* ImportSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSuccessView.swift; sourceTree = "<group>"; };
 		369DDB7629E4B1B100A42746 /* PhraselessImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraselessImportView.swift; sourceTree = "<group>"; };
+		369DDB7929E4B2D000A42746 /* MainLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoading.swift; sourceTree = "<group>"; };
+		369DDB7B29E4BB1F00A42746 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		369DDB7D29E4BBB800A42746 /* MainButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonsView.swift; sourceTree = "<group>"; };
 		36A6557329D30566004420A1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		36A6557529D30989004420A1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		36A6557729D30A84004420A1 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
@@ -158,6 +164,16 @@
 			path = Import;
 			sourceTree = "<group>";
 		};
+		369DDB7829E4B29D00A42746 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				369DDB7929E4B2D000A42746 /* MainLoading.swift */,
+				369DDB7B29E4BB1F00A42746 /* MainNavigationView.swift */,
+				369DDB7D29E4BBB800A42746 /* MainButtonsView.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
 		36EE71EF29CC8B3E0098FADB = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +195,7 @@
 			children = (
 				3630DE0A29D2E6D500CEE04C /* CreateWallet */,
 				369DDB7129E4ACB100A42746 /* Import */,
+				369DDB7829E4B29D00A42746 /* Wallet */,
 				36318E9029CCEF5C00C3EC46 /* Stickers */,
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
 				3630DE0529D239A200CEE04C /* AnimationView */,
@@ -298,6 +315,7 @@
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
 				369DDB7329E4ACC700A42746 /* StartImportView.swift in Sources */,
+				369DDB7A29E4B2D000A42746 /* MainLoading.swift in Sources */,
 				3630DE1029D2FD7100CEE04C /* CircleAnimation.swift in Sources */,
 				3630DE0429D22CA900CEE04C /* AnimationView.swift in Sources */,
 				36A6558029D31CB7004420A1 /* PhraseTableView.swift in Sources */,
@@ -305,7 +323,9 @@
 				3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */,
 				36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */,
 				362E114C29D986EE00D09F04 /* TestTimeView.swift in Sources */,
+				369DDB7E29E4BBB800A42746 /* MainButtonsView.swift in Sources */,
 				369D252D29DF372400B89B94 /* FaceIDView.swift in Sources */,
+				369DDB7C29E4BB1F00A42746 /* MainNavigationView.swift in Sources */,
 				3630DE0729D239C200CEE04C /* StickersEnum.swift in Sources */,
 				36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */,
 				36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */,

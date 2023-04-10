@@ -24,7 +24,7 @@ struct CongratulationsView: View {
                 
                 Spacer()
                 
-                MainButton(label: "Proceed", action: {
+                CreateButton(label: "Proceed", action: {
                     
                 })
                 

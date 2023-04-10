@@ -23,7 +23,7 @@ struct PhraselessImportView: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom, 176.0)
                 
-                MainButton(label: "Enter 24 secret words", action: {
+                CreateButton(label: "Enter 24 secret words", action: {
                     
                 })
                 .padding(.bottom, 16.0)
