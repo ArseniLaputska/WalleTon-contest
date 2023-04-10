@@ -17,10 +17,7 @@ struct MainNavigationView: View {
             Button(action: scan, label: {
                 Image(systemName: "qrcode.viewfinder")
                     .resizable()
-                    .frame(width: 28, height: 28)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 14.0)
-                    .padding(.vertical, 8.0)
+                    .navigationButtonModifier()
             })
             
             Spacer()
@@ -28,12 +25,19 @@ struct MainNavigationView: View {
             Button(action: settings, label: {
                 Image(systemName: "gear")
                     .resizable()
-                    .frame(width: 28, height: 28)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 14.0)
-                    .padding(.vertical, 8.0)
+                    .navigationButtonModifier()
             })
             
         }
+    }
+}
+
+extension View {
+    func navigationButtonModifier() -> some View {
+        self
+            .frame(width: 28, height: 28)
+            .foregroundColor(.white)
+            .padding(.horizontal, 14.0)
+            .padding(.vertical, 8.0)
     }
 }
