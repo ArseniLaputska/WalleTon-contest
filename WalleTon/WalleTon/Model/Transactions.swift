@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct Transaction: Decodable, Identifiable {
+    var id = UUID()
+    let date: Date
+    let count: Double
+    let address: String
+    let fee: Double
+    let comment: String
+    let isReceived: Bool
+}
