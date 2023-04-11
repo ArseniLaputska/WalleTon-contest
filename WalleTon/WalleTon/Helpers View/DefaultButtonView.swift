@@ -17,14 +17,6 @@ struct MainButton<Label: View>: View {
             .frame(maxWidth: .infinity, maxHeight: 50)
             .background(Color.accent)
             .cornerRadius(12)
-        
-        //                            {
-        //            Text(label)
-        //                .font(.bodySemibold())
-        //                .frame(maxWidth: .infinity, maxHeight: 50)
-        //                .foregroundColor(.white)
-        //        })
-        //    }
     }
 }
 

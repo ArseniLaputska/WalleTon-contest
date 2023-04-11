@@ -27,15 +27,13 @@ struct MainLoading: View {
                 }, settings: {
                     
                 })
-                .background(Color.black)
                     
                 ScrollView {
                     VStack {
                         AnimationView(sticker: .main)
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 36, height: 36)
-                            .padding(.top, 52.0)
-                            .background(Color.black)
+                            .padding(.top, 34.0)
                         
                         MainButtonsView(receive: {
                             
@@ -43,9 +41,8 @@ struct MainLoading: View {
                             
                         })
                         .frame(height: 50)
-                        .padding(.top, 72.0)
+                        .padding(.top, 54.0)
                         .padding(.bottom, 34.0)
-                        .background(Color.black)
                     }
                     .background(Color.black)
                     
@@ -77,11 +74,9 @@ struct MainLoading: View {
                     
                 }
                 .background(Color.white)
-                .cornerRadius(12.0)
             }
-            .background(Color.black)
         }
-        .background(Color.white)
+        .background(Color.black)
     }
 }
 

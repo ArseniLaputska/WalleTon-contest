@@ -114,6 +114,7 @@
 				3630DE0329D22CA900CEE04C /* AnimationView.swift */,
 				3630DE0629D239C200CEE04C /* StickersEnum.swift */,
 				3630DE0829D239EB00CEE04C /* AnimationError.swift */,
+				3630DE0F29D2FD7100CEE04C /* CircleAnimation.swift */,
 			);
 			path = AnimationView;
 			sourceTree = "<group>";
@@ -174,6 +175,45 @@
 			path = Wallet;
 			sourceTree = "<group>";
 		};
+		369DDB7F29E557A000A42746 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				36A6557529D30989004420A1 /* FontExtension.swift */,
+				36A6557329D30566004420A1 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		369DDB8029E557B000A42746 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				36EE71FF29CC8B400098FADB /* Assets.xcassets */,
+				36318E9029CCEF5C00C3EC46 /* Stickers */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		369DDB8129E5591200A42746 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3630DE0A29D2E6D500CEE04C /* CreateWallet */,
+				369DDB7129E4ACB100A42746 /* Import */,
+				369DDB7829E4B29D00A42746 /* Wallet */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		369DDB8229E5592B00A42746 /* Helpers View */ = {
+			isa = PBXGroup;
+			children = (
+				3630DE0D29D2EAED00CEE04C /* DefaultButtonView.swift */,
+				36A6557929D30DAC004420A1 /* TitleView.swift */,
+				36A6557B29D30DFC004420A1 /* DescrView.swift */,
+				3630DE0529D239A200CEE04C /* AnimationView */,
+			);
+			path = "Helpers View";
+			sourceTree = "<group>";
+		};
 		36EE71EF29CC8B3E0098FADB = {
 			isa = PBXGroup;
 			children = (
@@ -193,21 +233,13 @@
 		36EE71FA29CC8B3E0098FADB /* WalleTon */ = {
 			isa = PBXGroup;
 			children = (
-				3630DE0A29D2E6D500CEE04C /* CreateWallet */,
-				369DDB7129E4ACB100A42746 /* Import */,
-				369DDB7829E4B29D00A42746 /* Wallet */,
-				36318E9029CCEF5C00C3EC46 /* Stickers */,
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
-				3630DE0529D239A200CEE04C /* AnimationView */,
+				369DDB8029E557B000A42746 /* Assets */,
+				369DDB8129E5591200A42746 /* View */,
+				369DDB7F29E557A000A42746 /* Extension */,
+				369DDB8229E5592B00A42746 /* Helpers View */,
 				36318EA929CCFBEA00C3EC46 /* Zipper.swift */,
-				36EE71FF29CC8B400098FADB /* Assets.xcassets */,
 				36EE720129CC8B400098FADB /* Preview Content */,
-				3630DE0D29D2EAED00CEE04C /* DefaultButtonView.swift */,
-				3630DE0F29D2FD7100CEE04C /* CircleAnimation.swift */,
-				36A6557329D30566004420A1 /* ColorExtension.swift */,
-				36A6557529D30989004420A1 /* FontExtension.swift */,
-				36A6557929D30DAC004420A1 /* TitleView.swift */,
-				36A6557B29D30DFC004420A1 /* DescrView.swift */,
 			);
 			path = WalleTon;
 			sourceTree = "<group>";
