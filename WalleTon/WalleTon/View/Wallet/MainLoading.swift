@@ -16,7 +16,9 @@ enum MainState {
 struct MainLoading: View {
     
     @State private var headerOffset: CGFloat = 0
-    @State private var mainState: MainState = .loading
+    @State private var mainState: MainState = .created
+    @State private var count = 0
+    @State private var wallet = "UQBFz01R2CU7YA8pevUaNIYEzi1mRo4cX-r3W2Dwx-WEAoKP"
     
     var body: some View {
         ZStack {
@@ -30,10 +32,36 @@ struct MainLoading: View {
                     
                 ScrollView {
                     VStack {
-                        AnimationView(sticker: .main)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 36, height: 36)
-                            .padding(.top, 34.0)
+                        switch mainState {
+                            case .loading:
+                                AnimationView(sticker: .main)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 36, height: 36)
+                                    .padding(.top, 34.0)
+                            case .created:
+                                VStack {
+                                    HuggedText(text: wallet)
+                                        .font(.bodyRegular())
+                                        .foregroundColor(.white)
+                                        .padding(.top, 28.0)
+                                    
+                                    HStack {
+                                        AnimationView(sticker: .main)
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 36, height: 36)
+                                        
+                                        Text("\(count)")
+                                            .font(.largeTitle)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.white)
+                                    }
+                                }
+                            case .transactions:
+                                AnimationView(sticker: .main)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 36, height: 36)
+                                    .padding(.top, 34.0)
+                        }
                         
                         MainButtonsView(receive: {
                             
@@ -49,10 +77,23 @@ struct MainLoading: View {
                     VStack {
                         switch mainState {
                             case .created:
-                                AnimationView(sticker: .loading)
+                                AnimationView(sticker: .created)
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 124, height: 124)
-                                    .padding(.top, 170.0)
+                                    .padding(.top, 90.0)
+                                
+                                TitleView(title: "Wallet Created")
+                                    .padding(.top, 8.0)
+                                    .padding(.bottom, 28.0)
+                                
+                                Text("Your wallet address")
+                                    .foregroundColor(.secondary)
+                                    .font(.bodyRegular())
+                                    .padding(.bottom, 6.0)
+                                
+                                Text(wallet)
+                                    .padding(.horizontal, 65.0)
+                                
                             case .loading:
                                 // todo
                                 AnimationView(sticker: .loading)
@@ -77,6 +118,18 @@ struct MainLoading: View {
             }
         }
         .background(Color.black)
+    }
+}
+
+struct HuggedText: View {
+    let text: String
+    
+    var body: some View {
+        HStack {
+            Spacer()
+            Text(text.prefix(4) + "..." + text.suffix(4))
+            Spacer()
+        }
     }
 }
 

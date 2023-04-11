@@ -39,6 +39,7 @@
 		369DDB7A29E4B2D000A42746 /* MainLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7929E4B2D000A42746 /* MainLoading.swift */; };
 		369DDB7C29E4BB1F00A42746 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7B29E4BB1F00A42746 /* MainNavigationView.swift */; };
 		369DDB7E29E4BBB800A42746 /* MainButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB7D29E4BBB800A42746 /* MainButtonsView.swift */; };
+		369DDB8529E56DCF00A42746 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DDB8429E56DCF00A42746 /* Transactions.swift */; };
 		36A6557429D30566004420A1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557329D30566004420A1 /* ColorExtension.swift */; };
 		36A6557629D30989004420A1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557529D30989004420A1 /* FontExtension.swift */; };
 		36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6557729D30A84004420A1 /* CongratulationsView.swift */; };
@@ -83,6 +84,7 @@
 		369DDB7929E4B2D000A42746 /* MainLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoading.swift; sourceTree = "<group>"; };
 		369DDB7B29E4BB1F00A42746 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 		369DDB7D29E4BBB800A42746 /* MainButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonsView.swift; sourceTree = "<group>"; };
+		369DDB8429E56DCF00A42746 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		36A6557329D30566004420A1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		36A6557529D30989004420A1 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		36A6557729D30A84004420A1 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
@@ -214,6 +216,14 @@
 			path = "Helpers View";
 			sourceTree = "<group>";
 		};
+		369DDB8329E56DBC00A42746 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				369DDB8429E56DCF00A42746 /* Transactions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		36EE71EF29CC8B3E0098FADB = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +245,7 @@
 			children = (
 				36EE71FB29CC8B3E0098FADB /* WalleTonApp.swift */,
 				369DDB8029E557B000A42746 /* Assets */,
+				369DDB8329E56DBC00A42746 /* Model */,
 				369DDB8129E5591200A42746 /* View */,
 				369DDB7F29E557A000A42746 /* Extension */,
 				369DDB8229E5592B00A42746 /* Helpers View */,
@@ -345,6 +356,7 @@
 				369DDB7729E4B1B100A42746 /* PhraselessImportView.swift in Sources */,
 				369DDB7029E4A82B00A42746 /* DoneView.swift in Sources */,
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
+				369DDB8529E56DCF00A42746 /* Transactions.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
 				369DDB7329E4ACC700A42746 /* StartImportView.swift in Sources */,
 				369DDB7A29E4B2D000A42746 /* MainLoading.swift in Sources */,
