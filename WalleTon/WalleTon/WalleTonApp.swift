@@ -11,7 +11,7 @@ import SwiftUI
 struct WalleTonApp: App {
     var body: some Scene {
         WindowGroup {
-            FaceIDView()
+            MainView()
         }
     }
 }
