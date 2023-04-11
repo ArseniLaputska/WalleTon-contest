@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainNavigationView: View {
     
+    @State var mainState: MainState
+    @State var showTopView: Bool
+    @State var balance: Double
     var scan: () -> Void
     var settings: () -> Void
     
@@ -20,7 +23,31 @@ struct MainNavigationView: View {
                     .navigationButtonModifier()
             })
             
-            Spacer()
+            switch mainState {
+                case .loading, .created:
+                    Spacer()
+                case .transactions:
+                    if showTopView {
+                        VStack {
+                            HStack {
+                                AnimationView(sticker: .main)
+                                    .frame(width: 16, height: 20)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.trailing, 2.0)
+                                
+                                Text("\(balance)")
+                                    .font(.body)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                            }
+                            
+                            //to do: implement converter
+                            Text("≈ $89.6")
+                        }
+                    } else {
+                        Spacer()
+                    }
+            }
             
             Button(action: settings, label: {
                 Image(systemName: "gear")
