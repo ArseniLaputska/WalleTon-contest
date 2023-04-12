@@ -9,9 +9,9 @@ import SwiftUI
 
 struct MainNavigationView: View {
     
-    @State var mainState: MainState
-    @State var showTopView: Bool
-    @State var balance: Double
+    @Binding var mainState: MainState
+    var showTopView: Bool
+    @Binding var balance: Double
     var scan: () -> Void
     var settings: () -> Void
     
@@ -28,22 +28,32 @@ struct MainNavigationView: View {
                     Spacer()
                 case .transactions:
                     if showTopView {
-                        VStack {
-                            HStack {
-                                AnimationView(sticker: .main)
-                                    .frame(width: 16, height: 20)
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.trailing, 2.0)
-                                
-                                Text("\(balance)")
-                                    .font(.body)
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(.white)
-                            }
+                        HStack {
+                            Spacer()
                             
-                            //to do: implement converter
-                            Text("≈ $89.6")
+                            VStack {
+                                HStack {
+                                    AnimationView(sticker: .main)
+                                        .frame(width: 16, height: 20)
+                                        .aspectRatio(contentMode: .fit)
+                                        .padding(.trailing, 2.0)
+                                    
+                                    Text("\(balance)")
+                                        .font(.body)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.white)
+                                }
+                                
+                                //to do: implement converter
+                                Text("≈ $89.6")
+                                    .foregroundColor(.gray)
+                            }
+                            .padding(.top, 3.0)
+                            .padding(.bottom, 5.0)
+                            
+                            Spacer()
                         }
+                        
                     } else {
                         Spacer()
                     }

@@ -16,12 +16,13 @@ enum MainState {
 struct MainView: View {
     
     @State private var transactions: [Transaction] = [
-         Transaction(date: Date(timeIntervalSince1970: +999900000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "Testing payments, D.", isReceived: true),
-         Transaction(date: Date(timeIntervalSince1970: +999900000), count: 10, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.00734732, comment: "Thanks", isReceived: false),
-         Transaction(date: Date(timeIntervalSince1970: +999800000), count: 15, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true),
-         Transaction(date: Date(timeIntervalSince1970: +999700000), count: 12, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true),
-         Transaction(date: Date(timeIntervalSince1970: +999700000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true)]
+        Transaction(date: Date(timeIntervalSince1970: +999900000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "Testing payments, D.", isReceived: true),
+        Transaction(date: Date(timeIntervalSince1970: +999900000), count: 10, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.00734732, comment: "Thanks", isReceived: false),
+        Transaction(date: Date(timeIntervalSince1970: +999800000), count: 15, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true),
+        Transaction(date: Date(timeIntervalSince1970: +999700000), count: 12, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true),
+        Transaction(date: Date(timeIntervalSince1970: +999700000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true)]
     
+    @State private var offset: CGFloat = 0
     @State private var showTopView: Bool = false
     @State private var mainState: MainState = .transactions
     @State private var count: Double = 0.0
@@ -31,12 +32,12 @@ struct MainView: View {
         ZStack {
             VStack {
                 
-                MainNavigationView(mainState: mainState, showTopView: showTopView, balance: count, scan: {
+                MainNavigationView(mainState: $mainState, showTopView: offset > 0, balance: $count, scan: {
                     
                 }, settings: {
                     
                 })
-                    
+                
                 ScrollView {
                     
                     VStack {
@@ -57,10 +58,28 @@ struct MainView: View {
                     }
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                     .background(TopRoundedRectangle(radius: 12).fill(Color.white))
+                    .background(
+                        GeometryReader { geo in
+                            Color.clear
+                                .preference(key: OffsetPreferenceKey.self, value: -geo.frame(in: .named("scroll")).origin.y)
+                        }
+                    )
+                    .onPreferenceChange(OffsetPreferenceKey.self) { offset in
+                        self.offset = offset
+                    }
                 }
+                .coordinateSpace(name: "scroll")
             }
         }
         .background(Color.black)
+    }
+}
+
+struct OffsetPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = CGFloat.zero
+    
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value += nextValue()
     }
 }
 
