@@ -15,4 +15,5 @@ struct Transaction: Decodable, Identifiable {
     let fee: Double
     let comment: String
     let isReceived: Bool
+    let transactionId: String
 }

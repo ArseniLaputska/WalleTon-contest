@@ -28,6 +28,22 @@
 		36318EA529CCEF5C00C3EC46 /* Loading.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9A29CCEF5C00C3EC46 /* Loading.tgs */; };
 		36318EA629CCEF5C00C3EC46 /* Test Time.tgs in Resources */ = {isa = PBXBuildFile; fileRef = 36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */; };
 		36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36318EA929CCFBEA00C3EC46 /* Zipper.swift */; };
+		3653E01F29E71CD900E5D54B /* PartialIpadStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E01E29E71CD900E5D54B /* PartialIpadStyle.swift */; };
+		3653E02129E71CE400E5D54B /* PartialIphoneStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02029E71CE400E5D54B /* PartialIphoneStyle.swift */; };
+		3653E02329E71D2300E5D54B /* PartialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02229E71D2300E5D54B /* PartialManager.swift */; };
+		3653E02529E71D4B00E5D54B /* PartialManagerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02429E71D4B00E5D54B /* PartialManagerWrapper.swift */; };
+		3653E02729E71D6600E5D54B /* PartialSlideAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02629E71D6600E5D54B /* PartialSlideAnimation.swift */; };
+		3653E02929E71D7B00E5D54B /* PartialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02829E71D7B00E5D54B /* PartialType.swift */; };
+		3653E02B29E71D9200E5D54B /* PartialViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02A29E71D9200E5D54B /* PartialViewModifier.swift */; };
+		3653E02E29E71DD900E5D54B /* SafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02D29E71DD900E5D54B /* SafeAreaInsets.swift */; };
+		3653E03029E71DEE00E5D54B /* EraseToAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E02F29E71DEE00E5D54B /* EraseToAnyView.swift */; };
+		3653E03229E71E0400E5D54B /* FrameTrackerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E03129E71E0400E5D54B /* FrameTrackerModifier.swift */; };
+		3653E03429E71E2100E5D54B /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E03329E71E2100E5D54B /* DeviceType.swift */; };
+		3653E03629E71E6800E5D54B /* PartialDragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E03529E71E6800E5D54B /* PartialDragGesture.swift */; };
+		3653E03829E71E8D00E5D54B /* PartialKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E03729E71E8D00E5D54B /* PartialKeyboard.swift */; };
+		3653E03A29E71ECD00E5D54B /* PartialScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E03929E71ECD00E5D54B /* PartialScrollView.swift */; };
+		3653E03C29E71FA100E5D54B /* PartialSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E03B29E71FA100E5D54B /* PartialSheet.swift */; };
+		3653E03E29E7212300E5D54B /* PartialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E03D29E7212300E5D54B /* PartialButton.swift */; };
 		3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21829DE01D300E28FC9 /* PasscodeView.swift */; };
 		3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */; };
 		369D252D29DF372400B89B94 /* FaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D252C29DF372400B89B94 /* FaceIDView.swift */; };
@@ -81,6 +97,22 @@
 		36318E9A29CCEF5C00C3EC46 /* Loading.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = Loading.tgs; sourceTree = "<group>"; };
 		36318E9B29CCEF5C00C3EC46 /* Test Time.tgs */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Test Time.tgs"; sourceTree = "<group>"; };
 		36318EA929CCFBEA00C3EC46 /* Zipper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zipper.swift; sourceTree = "<group>"; };
+		3653E01E29E71CD900E5D54B /* PartialIpadStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialIpadStyle.swift; sourceTree = "<group>"; };
+		3653E02029E71CE400E5D54B /* PartialIphoneStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialIphoneStyle.swift; sourceTree = "<group>"; };
+		3653E02229E71D2300E5D54B /* PartialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialManager.swift; sourceTree = "<group>"; };
+		3653E02429E71D4B00E5D54B /* PartialManagerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialManagerWrapper.swift; sourceTree = "<group>"; };
+		3653E02629E71D6600E5D54B /* PartialSlideAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialSlideAnimation.swift; sourceTree = "<group>"; };
+		3653E02829E71D7B00E5D54B /* PartialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialType.swift; sourceTree = "<group>"; };
+		3653E02A29E71D9200E5D54B /* PartialViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialViewModifier.swift; sourceTree = "<group>"; };
+		3653E02D29E71DD900E5D54B /* SafeAreaInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInsets.swift; sourceTree = "<group>"; };
+		3653E02F29E71DEE00E5D54B /* EraseToAnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseToAnyView.swift; sourceTree = "<group>"; };
+		3653E03129E71E0400E5D54B /* FrameTrackerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTrackerModifier.swift; sourceTree = "<group>"; };
+		3653E03329E71E2100E5D54B /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		3653E03529E71E6800E5D54B /* PartialDragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialDragGesture.swift; sourceTree = "<group>"; };
+		3653E03729E71E8D00E5D54B /* PartialKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialKeyboard.swift; sourceTree = "<group>"; };
+		3653E03929E71ECD00E5D54B /* PartialScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialScrollView.swift; sourceTree = "<group>"; };
+		3653E03B29E71FA100E5D54B /* PartialSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialSheet.swift; sourceTree = "<group>"; };
+		3653E03D29E7212300E5D54B /* PartialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialButton.swift; sourceTree = "<group>"; };
 		3675C21829DE01D300E28FC9 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextFieldView.swift; sourceTree = "<group>"; };
 		369D252C29DF372400B89B94 /* FaceIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDView.swift; sourceTree = "<group>"; };
@@ -173,6 +205,37 @@
 			path = Stickers;
 			sourceTree = "<group>";
 		};
+		3653E01D29E71CB700E5D54B /* PartialSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3653E02C29E71DC400E5D54B /* Extensions */,
+				3653E01E29E71CD900E5D54B /* PartialIpadStyle.swift */,
+				3653E02029E71CE400E5D54B /* PartialIphoneStyle.swift */,
+				3653E02229E71D2300E5D54B /* PartialManager.swift */,
+				3653E02429E71D4B00E5D54B /* PartialManagerWrapper.swift */,
+				3653E02629E71D6600E5D54B /* PartialSlideAnimation.swift */,
+				3653E02829E71D7B00E5D54B /* PartialType.swift */,
+				3653E02A29E71D9200E5D54B /* PartialViewModifier.swift */,
+				3653E03529E71E6800E5D54B /* PartialDragGesture.swift */,
+				3653E03729E71E8D00E5D54B /* PartialKeyboard.swift */,
+				3653E03929E71ECD00E5D54B /* PartialScrollView.swift */,
+				3653E03B29E71FA100E5D54B /* PartialSheet.swift */,
+				3653E03D29E7212300E5D54B /* PartialButton.swift */,
+			);
+			path = PartialSheet;
+			sourceTree = "<group>";
+		};
+		3653E02C29E71DC400E5D54B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3653E02D29E71DD900E5D54B /* SafeAreaInsets.swift */,
+				3653E02F29E71DEE00E5D54B /* EraseToAnyView.swift */,
+				3653E03129E71E0400E5D54B /* FrameTrackerModifier.swift */,
+				3653E03329E71E2100E5D54B /* DeviceType.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		369DDB7129E4ACB100A42746 /* Import */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +292,7 @@
 		369DDB8229E5592B00A42746 /* Helpers View */ = {
 			isa = PBXGroup;
 			children = (
+				3653E01D29E71CB700E5D54B /* PartialSheet */,
 				369DDB9429E5FAD600A42746 /* TextHelpers */,
 				3630DE0529D239A200CEE04C /* AnimationView */,
 				3630DE0D29D2EAED00CEE04C /* DefaultButtonView.swift */,
@@ -383,14 +447,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3653E03629E71E6800E5D54B /* PartialDragGesture.swift in Sources */,
+				3653E02529E71D4B00E5D54B /* PartialManagerWrapper.swift in Sources */,
 				36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */,
 				369DDB8929E5A47A00A42746 /* Extensions.swift in Sources */,
 				3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */,
+				3653E02729E71D6600E5D54B /* PartialSlideAnimation.swift in Sources */,
 				369DDB7729E4B1B100A42746 /* PhraselessImportView.swift in Sources */,
+				3653E03A29E71ECD00E5D54B /* PartialScrollView.swift in Sources */,
 				369DDB7029E4A82B00A42746 /* DoneView.swift in Sources */,
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
 				369DDB8529E56DCF00A42746 /* Transactions.swift in Sources */,
+				3653E01F29E71CD900E5D54B /* PartialIpadStyle.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
+				3653E03829E71E8D00E5D54B /* PartialKeyboard.swift in Sources */,
+				3653E02B29E71D9200E5D54B /* PartialViewModifier.swift in Sources */,
 				369DDB7329E4ACC700A42746 /* StartImportView.swift in Sources */,
 				369DDB8B29E5E92800A42746 /* DateExtension.swift in Sources */,
 				369DDB7A29E4B2D000A42746 /* MainView.swift in Sources */,
@@ -402,6 +473,7 @@
 				369DDB9329E5FAC900A42746 /* HuggedText.swift in Sources */,
 				36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */,
 				362E114C29D986EE00D09F04 /* TestTimeView.swift in Sources */,
+				3653E02129E71CE400E5D54B /* PartialIphoneStyle.swift in Sources */,
 				369DDB7E29E4BBB800A42746 /* MainButtonsView.swift in Sources */,
 				369DDB8729E56FF200A42746 /* TransactionView.swift in Sources */,
 				369D252D29DF372400B89B94 /* FaceIDView.swift in Sources */,
@@ -411,15 +483,23 @@
 				3630DE0729D239C200CEE04C /* StickersEnum.swift in Sources */,
 				369DDB9129E5FA9300A42746 /* TopRoundedRectangle.swift in Sources */,
 				36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */,
+				3653E03029E71DEE00E5D54B /* EraseToAnyView.swift in Sources */,
+				3653E02E29E71DD900E5D54B /* SafeAreaInsets.swift in Sources */,
+				3653E03E29E7212300E5D54B /* PartialButton.swift in Sources */,
 				36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */,
 				362E114E29D9E5AF00D09F04 /* TestTimeTextField.swift in Sources */,
 				3630DE0E29D2EAED00CEE04C /* DefaultButtonView.swift in Sources */,
 				3630DE0C29D2E73300CEE04C /* StartView.swift in Sources */,
+				3653E02929E71D7B00E5D54B /* PartialType.swift in Sources */,
 				369DDB9629E5FAFE00A42746 /* BubbleCommentShape.swift in Sources */,
 				36A6557629D30989004420A1 /* FontExtension.swift in Sources */,
 				36A6557A29D30DAC004420A1 /* TitleView.swift in Sources */,
 				369D252F29E2042900B89B94 /* TouchIDView.swift in Sources */,
+				3653E03C29E71FA100E5D54B /* PartialSheet.swift in Sources */,
 				36A6557429D30566004420A1 /* ColorExtension.swift in Sources */,
+				3653E03429E71E2100E5D54B /* DeviceType.swift in Sources */,
+				3653E02329E71D2300E5D54B /* PartialManager.swift in Sources */,
+				3653E03229E71E0400E5D54B /* FrameTrackerModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

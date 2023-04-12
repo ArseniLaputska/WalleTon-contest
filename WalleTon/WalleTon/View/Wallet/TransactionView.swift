@@ -10,6 +10,8 @@ import SwiftUI
 struct TransactionsListView: View {
     
     @State var transactons: [Transaction]
+    @State private var currentTransaction: Transaction?
+    @State private var isSheetPresented = false
     
     //to be implemented properly
     let dateFormatter: DateFormatter = {
@@ -23,6 +25,15 @@ struct TransactionsListView: View {
             Section(header: headerFor(date)) {
                 ForEach(groupedTransactions[date]!) { transaction in
                     TransactionView(transaction: transaction)
+                        .onTapGesture {
+                            currentTransaction = transaction
+                            isSheetPresented = true
+                        }
+                        .partialSheet(isPresented: $isSheetPresented, content: {
+                            if let currentTransaction {
+                                TransactionSheet(transaction: currentTransaction)
+                            }
+                        })
                 }
             }
             .padding(.top, 20.0)
@@ -38,6 +49,85 @@ struct TransactionsListView: View {
     
     private var groupedTransactions: [Date: [Transaction]] {
         Dictionary(grouping: transactons, by: { Calendar.current.startOfDay(for: $0.date) })
+    }
+}
+
+struct TransactionSheet: View {
+    
+    @State var transaction: Transaction
+    @Environment(\.presentationMode) private var presentationMode
+    
+    let dateFormatter: DateFormatter = {
+           let formatter = DateFormatter()
+        formatter.dateStyle = .short
+           return formatter
+       }()
+    
+    var body: some View {
+        ZStack {
+            VStack {
+                HStack {
+                    Text("Transaction")
+                    
+                    Button("Done", action: {
+                        dismiss()
+                    })
+                }
+                
+                HStack {
+                    AnimationView(sticker: .main)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 56, height: 56)
+                    
+                    Text(transaction.count.description)
+                        .font(.bodySemibold())
+                        .foregroundColor(.green)
+                }
+                .padding(.top, 20.0)
+                .padding(.bottom, 6.0)
+                
+                Text(transaction.fee.description + "transaction fee")
+                    .font(.subheadline)
+                    .foregroundColor(.textSecondary)
+                    .padding(.bottom, 4.0)
+                
+                Text(dateFormatter.string(from: transaction.date))
+                    .font(.subheadline)
+                    .foregroundColor(.textSecondary)
+                    .padding(.bottom, 16.0)
+                
+                BubbleComment(comment: transaction.comment)
+                    .padding(.bottom, 16.0)
+                
+                Section(header: Text("DETAILS")) {
+                    VStack {
+                        HStack {
+                            Text("Sender address")
+                            Spacer()
+                            HuggedText(hugTo: 4, text: transaction.address)
+                        }
+                        
+                        HStack {
+                            Text("Transaction")
+                            Spacer()
+                            HuggedText(hugTo: 6, text: transaction.transactionId)
+                        }
+                        
+                        Button("View in explorer", action: {
+                            
+                        })
+                    }
+                }
+                
+                CreateButton(label: "Send TON to this address", action: {
+                    
+                })
+            }
+        }
+    }
+    
+    private func dismiss() {
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
@@ -106,13 +196,7 @@ struct TransactionView: View {
                 
                 if !transaction.comment.isEmpty {
                     HStack {
-                        Text(transaction.comment)
-                            .font(.subheadline)
-                            .fontWeight(.regular)
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 8.0)
-                            .background(Color.textField)
-                            .clipShape(BubbleShape())
+                        BubbleComment(comment: transaction.comment)
                         
                         Spacer()
                     }
@@ -120,5 +204,19 @@ struct TransactionView: View {
                 }
             }
         }
+    }
+}
+
+struct BubbleComment: View {
+    let comment: String
+    
+    var body: some View {
+        Text(comment)
+            .font(.subheadline)
+            .fontWeight(.regular)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 8.0)
+            .background(Color.textField)
+            .clipShape(BubbleShape())
     }
 }
