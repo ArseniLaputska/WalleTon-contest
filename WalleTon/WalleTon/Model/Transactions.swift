@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum TransactionState: Decodable {
+    case pending
+    case cancelled
+    case done
+}
+
 struct Transaction: Decodable, Identifiable {
     var id = UUID()
     let date: Date
@@ -16,4 +22,5 @@ struct Transaction: Decodable, Identifiable {
     let comment: String
     let isReceived: Bool
     let transactionId: String
+    let state: TransactionState
 }
