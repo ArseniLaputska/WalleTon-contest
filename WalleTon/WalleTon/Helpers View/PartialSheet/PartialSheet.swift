@@ -42,7 +42,7 @@ public extension View {
      */
     func partialSheet<Content: View>(isPresented: Binding<Bool>,
                                      type: PSType = PSType.dynamic,
-                                     iPhoneStyle: PSIphoneStyle = .defaultStyle(),
+                                     iPhoneStyle: PSIphoneStyle = .transactionStyle(),
                                      iPadMacStyle: PSIpadMacStyle = .defaultStyle(),
                                      slideAnimation: PSSlideAnimation? = nil,
                                      @ViewBuilder content: @escaping () -> Content) -> some View {

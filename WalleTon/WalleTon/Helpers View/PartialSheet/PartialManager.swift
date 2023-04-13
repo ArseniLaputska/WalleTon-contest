@@ -36,7 +36,7 @@ class PSManager: ObservableObject {
     
 
     /// The Partial Sheet Style configuration
-    var iPhoneStyle: PSIphoneStyle = .defaultStyle()
+    var iPhoneStyle: PSIphoneStyle = .transactionStyle()
     var iPadMacStyle : PSIpadMacStyle = .defaultStyle()
 
     /// the onDismiss code runned when the partial sheet is closed

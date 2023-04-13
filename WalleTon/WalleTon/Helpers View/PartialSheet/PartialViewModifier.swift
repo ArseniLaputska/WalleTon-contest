@@ -24,7 +24,7 @@ struct PartialSheet: ViewModifier {
     
     /// The offset for the drag gesture
     @State var dragOffset: CGFloat = 0
-
+    
     /// The rect containing the presenter
     @State private var presenterContentRect: CGRect = .zero
     
@@ -48,11 +48,12 @@ struct PartialSheet: ViewModifier {
     /// The height of the handle bar section
     var handleSectionHeight: CGFloat {
         switch iPhoneStyle.handleBarStyle {
-        case .solid: return 40
-        case .none: return 0
+            case .solid: return 40
+            case .transaction: return 40
+            case .none: return 0
         }
     }
-
+    
     private var iPhoneStyle: PSIphoneStyle { manager.iPhoneStyle }
     private var iPadMacStyle: PSIpadMacStyle { manager.iPadMacStyle }
     
@@ -75,13 +76,13 @@ struct PartialSheet: ViewModifier {
     /// Background of sheet
     @ViewBuilder private var background: some View {
         switch deviceType {
-        case .iphone:
-            switch iPhoneStyle.background {
-            case .solid(let color): Rectangle().fill(color)
-            case .blur(let effect): Rectangle().fill(effect)
-            }
-        default:
-            Rectangle().fill(iPadMacStyle.backgroundColor)
+            case .iphone:
+                switch iPhoneStyle.background {
+                    case .solid(let color): Rectangle().fill(color)
+                    case .blur(let effect): Rectangle().fill(effect)
+                }
+            default:
+                Rectangle().fill(iPadMacStyle.backgroundColor)
         }
     }
     
@@ -134,19 +135,19 @@ extension PartialSheet {
     private func iPadAndMacSheet() -> some View {
         VStack(alignment: .leading, spacing: 0) {
             switch iPadMacStyle.closeButtonStyle {
-            case .icon(image: let image, color: let color):
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        self.manager.isPresented = false
-                    }, label: {
-                        image
-                            .foregroundColor(color)
-                    })
-                }
-                .padding()
-            case .none:
-                EmptyView()
+                case .icon(image: let image, color: let color):
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            self.manager.isPresented = false
+                        }, label: {
+                            image
+                                .foregroundColor(color)
+                        })
+                    }
+                    .padding()
+                case .none:
+                    EmptyView()
             }
             self.manager.content
             Spacer()
@@ -159,7 +160,7 @@ extension PartialSheet {
     private func iPhoneSheet()-> some View {
         // Build the drag gesture
         let drag = dragGesture()
-
+        
         // content
         let sheetContent = self.manager.content
             .trackFrame()
@@ -171,11 +172,11 @@ extension PartialSheet {
             if manager.isPresented {
                 Group {
                     switch iPhoneStyle.cover {
-                    case .enabled(let color):
-                        Rectangle()
-                            .foregroundColor(color)
-                    case .disabled:
-                        EmptyView()
+                        case .enabled(let color):
+                            Rectangle()
+                                .foregroundColor(color)
+                        case .disabled:
+                            EmptyView()
                     }
                 }
                 .edgesIgnoringSafeArea(.vertical)
@@ -186,18 +187,23 @@ extension PartialSheet {
             Group {
                 VStack(spacing: 0) {
                     switch iPhoneStyle.handleBarStyle {
-                    case .solid(let handleBarColor):
-                        VStack {
-                            Spacer()
-                            RoundedRectangle(cornerRadius: CGFloat(5.0) / 2.0)
-                                .frame(width: 40, height: 5)
-                                .foregroundColor(handleBarColor)
-                            Spacer()
-                        }
-                        .frame(height: handleSectionHeight)
-                    case .none: EmptyView()
+                        case .solid(let handleBarColor):
+                            VStack {
+                                Spacer()
+                                RoundedRectangle(cornerRadius: CGFloat(5.0) / 2.0)
+                                    .frame(width: 40, height: 5)
+                                    .foregroundColor(handleBarColor)
+                                Spacer()
+                            }
+                            .frame(height: handleSectionHeight)
+                        case .transaction:
+                            TransactionHeaderView(dismiss: {
+                                dismissSheet()
+                            })
+                            .padding(.horizontal, 16.0)
+                        case .none: EmptyView()
                     }
-
+                    
                     if case let PSType.scrollView(height, showsIndicators) = manager.type {
                         VStack {
                             PSScrollVIew(
@@ -221,20 +227,20 @@ extension PartialSheet {
                 }
                 .onFrameDidChange { prefData in
                     let animation = prefData.first?.bounds != nil ? self.manager.slideAnimation.slideIn : self.manager.slideAnimation.slideOut
-
+                    
                     guard let bounds = prefData.first?.bounds else {
                         withAnimation(animation) {
                             self.sheetContentRect = .zero
                         }
                         return
                     }
-
+                    
                     let sheetContentRect: CGRect
                     switch manager.type {
-                    case .scrollView(height: let height, showsIndicators: _):
-                        sheetContentRect = CGRect(x: bounds.minX, y: bounds.minY, width: bounds.width, height: height)
-                    case .dynamic:
-                        sheetContentRect = bounds
+                        case .scrollView(height: let height, showsIndicators: _):
+                            sheetContentRect = CGRect(x: bounds.minX, y: bounds.minY, width: bounds.width, height: height)
+                        case .dynamic:
+                            sheetContentRect = bounds
                     }
                     withAnimation(animation) {
                         self.sheetContentRect = sheetContentRect
@@ -250,7 +256,7 @@ extension PartialSheet {
             }
         }
     }
-
+    
     private func dismissSheet() {
         withAnimation(manager.slideAnimation.slideOut) {
             self.manager.isPresented = false

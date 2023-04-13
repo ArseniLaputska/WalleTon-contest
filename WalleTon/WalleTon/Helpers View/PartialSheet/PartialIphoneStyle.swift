@@ -18,6 +18,7 @@ public struct PSIphoneStyle {
     /// Handle Bar types
     public enum PSHandleBarStyle {
         case solid(Color)
+        case transaction
         case none
     }
 
@@ -69,6 +70,14 @@ extension PSIphoneStyle {
     public static func defaultStyle() -> PSIphoneStyle {
         return .init(background: .solid(Color(UIColor.systemBackground)),
                              handleBarStyle: .solid(Color.secondary),
+                             cover: .enabled(Color.black.opacity(0.4)),
+                             cornerRadius: 10
+        )
+    }
+    
+    public static func transactionStyle() -> PSIphoneStyle {
+        return .init(background: .solid(Color(UIColor.systemBackground)),
+                             handleBarStyle: .transaction,
                              cover: .enabled(Color.black.opacity(0.4)),
                              cornerRadius: 10
         )
