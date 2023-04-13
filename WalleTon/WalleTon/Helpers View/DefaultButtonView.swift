@@ -79,7 +79,7 @@ struct DefaultButtonView<Label: View>: View {
                         .multilineTextAlignment(.center)
                     
                     if showProgressView {
-                        CircleAnimation()
+                        CircleAnimation(color: .white)
                             .frame(width: 16, height: 16)
                             .padding(.trailing, 5.0)
                     }
