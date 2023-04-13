@@ -25,24 +25,24 @@ struct MainView: View {
     @State private var offset: CGFloat = 0
     @State private var mainState: MainState = .transactions
     @State private var user: User = User(wallet: "UQBFz01R2CU7YA8pevUaNIYEzi1mRo4cX-r3W2Dwx-WEAoKP", balance: 0.0)
-    @State private var count: Double = 0.0
-    @State private var wallet = "UQBFz01R2CU7YA8pevUaNIYEzi1mRo4cX-r3W2Dwx-WEAoKP"
+    
+    @State private var showSettings = false
     
     var body: some View {
-        ZStack {
-            VStack {
-                
-                MainNavigationView(mainState: $mainState, user: $user, showTopView: offset > 0, scan: {
-                    
-                }, settings: {
-                    
-                })
-                
-                MainScrollView(user: $user, state: $mainState, transactions: $transactions, offset: $offset)
-            }
+        NavigationView {
+            ZStack {
+                    VStack {
+                        
+                        MainNavigationView(mainState: $mainState, user: $user, showTopView: offset > 0, scan: {
+                            
+                        })
+                        
+                        MainScrollView(user: $user, state: $mainState, transactions: $transactions, offset: $offset)
+                    }
+                }
+                .attachPartialSheetToRoot()
+                .background(Color.black)
         }
-        .attachPartialSheetToRoot()
-        .background(Color.black)
     }
 }
 

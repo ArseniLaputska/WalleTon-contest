@@ -56,6 +56,9 @@ struct SettingsView: View {
                 })
                 .foregroundColor(.red)
             }
+            .navigationTitle("Wallet Settings")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(false)
         }
     }
 }

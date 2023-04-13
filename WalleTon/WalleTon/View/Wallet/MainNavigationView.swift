@@ -14,7 +14,6 @@ struct MainNavigationView: View {
     
     var showTopView: Bool
     var scan: () -> Void
-    var settings: () -> Void
     
     var body: some View {
         HStack {
@@ -29,30 +28,33 @@ struct MainNavigationView: View {
                     Spacer()
                 case .transactions:
                     if showTopView {
-                        HStack {
-                            Spacer()
-                            
-                            VStack {
-                                HStack {
-                                    AnimationView(sticker: .main)
-                                        .frame(width: 16, height: 20)
-                                        .aspectRatio(contentMode: .fit)
-                                        .padding(.trailing, 2.0)
-                                    
-                                    Text("\(user.balance)")
-                                        .font(.body)
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(.white)
-                                }
+                        
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            HStack {
+                                Spacer()
                                 
-                                //to do: implement converter
-                                Text("≈ $89.6")
-                                    .foregroundColor(.gray)
+                                VStack {
+                                    HStack {
+                                        AnimationView(sticker: .main)
+                                            .frame(width: 16, height: 20)
+                                            .aspectRatio(contentMode: .fit)
+                                            .padding(.trailing, 2.0)
+                                        
+                                        Text("\(user.balance)")
+                                            .font(.body)
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(.white)
+                                    }
+                                    
+                                    //to do: implement converter
+                                    Text("≈ $89.6")
+                                        .foregroundColor(.gray)
+                                }
+                                .padding(.top, 3.0)
+                                .padding(.bottom, 5.0)
+                                
+                                Spacer()
                             }
-                            .padding(.top, 3.0)
-                            .padding(.bottom, 5.0)
-                            
-                            Spacer()
                         }
                         
                     } else {
@@ -60,7 +62,7 @@ struct MainNavigationView: View {
                     }
             }
             
-            Button(action: settings, label: {
+            NavigationLink(destination: SettingsView(), label: {
                 Image(systemName: "gear")
                     .resizable()
                     .navigationButtonModifier()
