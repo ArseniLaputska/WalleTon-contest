@@ -9,8 +9,7 @@ import SwiftUI
 
 struct MainBody: View {
     
-    @Binding var wallet: String
-    @Binding var balance: Double
+    @Binding var user: User
     @Binding var state: MainState
     
     var body: some View {
@@ -22,7 +21,7 @@ struct MainBody: View {
                     .padding(.top, 34.0)
             case .created, .transactions:
                 VStack {
-                    HuggedText(hugTo: 4, text: wallet)
+                    HuggedText(hugTo: 4, text: user.wallet)
                         .font(.bodyRegular())
                         .foregroundColor(.white)
                         .padding(.top, 28.0)
@@ -32,7 +31,7 @@ struct MainBody: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 36, height: 36)
                         
-                        Text("\(balance)")
+                        Text("\(user.balance)")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)

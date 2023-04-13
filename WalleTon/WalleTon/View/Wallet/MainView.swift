@@ -16,14 +16,15 @@ enum MainState {
 struct MainView: View {
     
     @State private var transactions: [Transaction] = [
-        Transaction(date: Date(timeIntervalSince1970: +999900000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "Testing payments, D.", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh"),
-        Transaction(date: Date(timeIntervalSince1970: +999900000), count: 10, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.00734732, comment: "Thanks", isReceived: false, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh"),
-        Transaction(date: Date(timeIntervalSince1970: +999800000), count: 15, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh"),
-        Transaction(date: Date(timeIntervalSince1970: +999700000), count: 12, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh"),
-        Transaction(date: Date(timeIntervalSince1970: +999700000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh")]
+        Transaction(date: Date(timeIntervalSince1970: +999900000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "Testing payments, D.", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", state: .done),
+        Transaction(date: Date(timeIntervalSince1970: +999900000), count: 10, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.00734732, comment: "Thanks", isReceived: false, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", state: .done),
+        Transaction(date: Date(timeIntervalSince1970: +999800000), count: 15, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", state: .cancelled),
+        Transaction(date: Date(timeIntervalSince1970: +999700000), count: 12, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", state: .pending),
+        Transaction(date: Date(timeIntervalSince1970: +999700000), count: 1.091, address: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", fee: 0.000065732, comment: "", isReceived: true, transactionId: "12nP8p4Ad9BDh4Ad9BDh4Ad9BDh", state: .pending)]
     
     @State private var offset: CGFloat = 0
     @State private var mainState: MainState = .transactions
+    @State private var user: User = User(wallet: "UQBFz01R2CU7YA8pevUaNIYEzi1mRo4cX-r3W2Dwx-WEAoKP", balance: 0.0)
     @State private var count: Double = 0.0
     @State private var wallet = "UQBFz01R2CU7YA8pevUaNIYEzi1mRo4cX-r3W2Dwx-WEAoKP"
     
@@ -31,43 +32,13 @@ struct MainView: View {
         ZStack {
             VStack {
                 
-                MainNavigationView(mainState: $mainState, showTopView: offset > 0, balance: $count, scan: {
+                MainNavigationView(mainState: $mainState, user: $user, showTopView: offset > 0, scan: {
                     
                 }, settings: {
                     
                 })
                 
-                ScrollView {
-                    
-                    VStack {
-                        MainBody(wallet: $wallet, balance: $count, state: $mainState)
-                        
-                        MainButtonsView(receive: {
-                            
-                        }, send: {
-                            
-                        })
-                        .frame(height: 50)
-                        .padding(.top, 36.0)
-                        .padding(.bottom, 16.0)
-                    }
-                    
-                    VStack {
-                        MainScrollContent(state: $mainState, wallet: $wallet, transactions: $transactions)
-                    }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                    .background(TopRoundedRectangle(radius: 12).fill(Color.white))
-                    .background(
-                        GeometryReader { geo in
-                            Color.clear
-                                .preference(key: OffsetPreferenceKey.self, value: -geo.frame(in: .named("scroll")).origin.y)
-                        }
-                    )
-                    .onPreferenceChange(OffsetPreferenceKey.self) { offset in
-                        self.offset = offset
-                    }
-                }
-                .coordinateSpace(name: "scroll")
+                MainScrollView(user: $user, state: $mainState, transactions: $transactions, offset: $offset)
             }
         }
         .attachPartialSheetToRoot()

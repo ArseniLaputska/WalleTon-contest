@@ -10,8 +10,9 @@ import SwiftUI
 struct MainNavigationView: View {
     
     @Binding var mainState: MainState
+    @Binding var user: User
+    
     var showTopView: Bool
-    @Binding var balance: Double
     var scan: () -> Void
     var settings: () -> Void
     
@@ -38,7 +39,7 @@ struct MainNavigationView: View {
                                         .aspectRatio(contentMode: .fit)
                                         .padding(.trailing, 2.0)
                                     
-                                    Text("\(balance)")
+                                    Text("\(user.balance)")
                                         .font(.body)
                                         .fontWeight(.semibold)
                                         .foregroundColor(.white)

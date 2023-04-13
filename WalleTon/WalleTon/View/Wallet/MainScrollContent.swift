@@ -10,7 +10,7 @@ import SwiftUI
 struct MainScrollContent: View {
     
     @Binding var state: MainState
-    @Binding var wallet: String
+    @Binding var user: User
     @Binding var transactions: [Transaction]
     
     var body: some View {
@@ -30,7 +30,7 @@ struct MainScrollContent: View {
                     .font(.bodyRegular())
                     .padding(.bottom, 6.0)
                 
-                Text(wallet)
+                Text(user.wallet)
                     .padding(.horizontal, 65.0)
                 
             case .loading:
