@@ -10,15 +10,17 @@ import SwiftUI
 struct CircleAnimation: View {
     
     @State var isAnimating: Bool = false
+    let color: Color
     
     var body: some View {
         Circle()
             .trim(from: 0, to: isAnimating ? 1 : 0)
-            .stroke(Color.white, lineWidth: 3)
+            .stroke(color, lineWidth: 2)
             .rotationEffect(Angle(degrees: isAnimating ? 360 : 0))
-            .animation(Animation.linear(duration: 2).repeatForever(autoreverses: false))
+            .transition(.move(edge: .top))
+            .animation(.linear(duration: 1.5).repeatForever(autoreverses: false), value: isAnimating)
             .onAppear {
-                isAnimating.toggle()
+                isAnimating = true
             }
     }
 }
