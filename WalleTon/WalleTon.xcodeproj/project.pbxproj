@@ -53,6 +53,7 @@
 		3653E04E29E8399200E5D54B /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E04D29E8399200E5D54B /* TransactionDetailView.swift */; };
 		3653E05029E839AA00E5D54B /* TransactionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E04F29E839AA00E5D54B /* TransactionHeaderView.swift */; };
 		3653E05429E8432200E5D54B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05329E8432200E5D54B /* SettingsView.swift */; };
+		3653E05629E9B52700E5D54B /* ReceiveTonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05529E9B52700E5D54B /* ReceiveTonView.swift */; };
 		3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21829DE01D300E28FC9 /* PasscodeView.swift */; };
 		3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */; };
 		369D252D29DF372400B89B94 /* FaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D252C29DF372400B89B94 /* FaceIDView.swift */; };
@@ -131,6 +132,7 @@
 		3653E04D29E8399200E5D54B /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		3653E04F29E839AA00E5D54B /* TransactionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHeaderView.swift; sourceTree = "<group>"; };
 		3653E05329E8432200E5D54B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3653E05529E9B52700E5D54B /* ReceiveTonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveTonView.swift; sourceTree = "<group>"; };
 		3675C21829DE01D300E28FC9 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextFieldView.swift; sourceTree = "<group>"; };
 		369D252C29DF372400B89B94 /* FaceIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDView.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 		3653E05129E842F400E5D54B /* Receive */ = {
 			isa = PBXGroup;
 			children = (
+				3653E05529E9B52700E5D54B /* ReceiveTonView.swift */,
 			);
 			path = Receive;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				3653E03429E71E2100E5D54B /* DeviceType.swift in Sources */,
 				3653E02329E71D2300E5D54B /* PartialManager.swift in Sources */,
 				3653E03229E71E0400E5D54B /* FrameTrackerModifier.swift in Sources */,
+				3653E05629E9B52700E5D54B /* ReceiveTonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
