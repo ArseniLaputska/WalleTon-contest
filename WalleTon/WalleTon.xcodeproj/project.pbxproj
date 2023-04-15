@@ -54,6 +54,10 @@
 		3653E05029E839AA00E5D54B /* TransactionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E04F29E839AA00E5D54B /* TransactionHeaderView.swift */; };
 		3653E05429E8432200E5D54B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05329E8432200E5D54B /* SettingsView.swift */; };
 		3653E05629E9B52700E5D54B /* ReceiveTonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05529E9B52700E5D54B /* ReceiveTonView.swift */; };
+		3653E05929EAF38200E5D54B /* SendTonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05829EAF38200E5D54B /* SendTonView.swift */; };
+		3653E05B29EB131200E5D54B /* InvalidAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05A29EB131200E5D54B /* InvalidAddressView.swift */; };
+		3653E05D29EB133E00E5D54B /* EnterAddressState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05C29EB133E00E5D54B /* EnterAddressState.swift */; };
+		3653E05F29EB150E00E5D54B /* EnterAmountOfTONView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3653E05E29EB150E00E5D54B /* EnterAmountOfTONView.swift */; };
 		3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21829DE01D300E28FC9 /* PasscodeView.swift */; };
 		3675C21B29DE041D00E28FC9 /* CircleTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */; };
 		369D252D29DF372400B89B94 /* FaceIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D252C29DF372400B89B94 /* FaceIDView.swift */; };
@@ -133,6 +137,10 @@
 		3653E04F29E839AA00E5D54B /* TransactionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHeaderView.swift; sourceTree = "<group>"; };
 		3653E05329E8432200E5D54B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3653E05529E9B52700E5D54B /* ReceiveTonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveTonView.swift; sourceTree = "<group>"; };
+		3653E05829EAF38200E5D54B /* SendTonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTonView.swift; sourceTree = "<group>"; };
+		3653E05A29EB131200E5D54B /* InvalidAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidAddressView.swift; sourceTree = "<group>"; };
+		3653E05C29EB133E00E5D54B /* EnterAddressState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAddressState.swift; sourceTree = "<group>"; };
+		3653E05E29EB150E00E5D54B /* EnterAmountOfTONView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAmountOfTONView.swift; sourceTree = "<group>"; };
 		3675C21829DE01D300E28FC9 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		3675C21A29DE041D00E28FC9 /* CircleTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextFieldView.swift; sourceTree = "<group>"; };
 		369D252C29DF372400B89B94 /* FaceIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDView.swift; sourceTree = "<group>"; };
@@ -293,6 +301,17 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		3653E05729EAF31B00E5D54B /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				3653E05829EAF38200E5D54B /* SendTonView.swift */,
+				3653E05C29EB133E00E5D54B /* EnterAddressState.swift */,
+				3653E05E29EB150E00E5D54B /* EnterAmountOfTONView.swift */,
+				3653E05A29EB131200E5D54B /* InvalidAddressView.swift */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
 		369DDB7129E4ACB100A42746 /* Import */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +364,7 @@
 				3653E05129E842F400E5D54B /* Receive */,
 				3653E04329E8365300E5D54B /* Transaction */,
 				3653E05229E842FD00E5D54B /* Settings */,
+				3653E05729EAF31B00E5D54B /* Send */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -511,6 +531,7 @@
 			files = (
 				3653E03629E71E6800E5D54B /* PartialDragGesture.swift in Sources */,
 				3653E02529E71D4B00E5D54B /* PartialManagerWrapper.swift in Sources */,
+				3653E05929EAF38200E5D54B /* SendTonView.swift in Sources */,
 				36A6557E29D30E85004420A1 /* RecoveryPhraseView.swift in Sources */,
 				369DDB8929E5A47A00A42746 /* Extensions.swift in Sources */,
 				3653E04729E836B200E5D54B /* TransactionSheetView.swift in Sources */,
@@ -523,6 +544,7 @@
 				3630DE0929D239EB00CEE04C /* AnimationError.swift in Sources */,
 				369DDB8529E56DCF00A42746 /* Transactions.swift in Sources */,
 				3653E01F29E71CD900E5D54B /* PartialIpadStyle.swift in Sources */,
+				3653E05D29EB133E00E5D54B /* EnterAddressState.swift in Sources */,
 				36A6557C29D30DFC004420A1 /* DescrView.swift in Sources */,
 				3653E03829E71E8D00E5D54B /* PartialKeyboard.swift in Sources */,
 				3653E02B29E71D9200E5D54B /* PartialViewModifier.swift in Sources */,
@@ -535,6 +557,7 @@
 				369DDB7529E4B14000A42746 /* ImportSuccessView.swift in Sources */,
 				3675C21929DE01D300E28FC9 /* PasscodeView.swift in Sources */,
 				369DDB9329E5FAC900A42746 /* HuggedText.swift in Sources */,
+				3653E05B29EB131200E5D54B /* InvalidAddressView.swift in Sources */,
 				36A6557829D30A84004420A1 /* CongratulationsView.swift in Sources */,
 				362E114C29D986EE00D09F04 /* TestTimeView.swift in Sources */,
 				3653E02129E71CE400E5D54B /* PartialIphoneStyle.swift in Sources */,
@@ -552,6 +575,7 @@
 				36318EAA29CCFBEA00C3EC46 /* Zipper.swift in Sources */,
 				3653E03029E71DEE00E5D54B /* EraseToAnyView.swift in Sources */,
 				3653E02E29E71DD900E5D54B /* SafeAreaInsets.swift in Sources */,
+				3653E05F29EB150E00E5D54B /* EnterAmountOfTONView.swift in Sources */,
 				3653E04029E833E600E5D54B /* MainScrollView.swift in Sources */,
 				3653E03E29E7212300E5D54B /* PartialButton.swift in Sources */,
 				36EE71FC29CC8B3E0098FADB /* WalleTonApp.swift in Sources */,

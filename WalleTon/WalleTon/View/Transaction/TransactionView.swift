@@ -77,7 +77,15 @@ struct TransactionView: View {
                         Spacer()
                     }
                     .padding(.bottom, 16.0)
+                    
+                    Color.init(white: 0.7)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 1)
                 }
+                
+                Color.init(white: 0.7)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 1)
+                    .opacity(!transaction.comment.isEmpty ? 0 : 1)
+            
             }
         }
     }

@@ -17,7 +17,8 @@ struct MainNavigationView: View {
     
     var body: some View {
         HStack {
-            Button(action: scan, label: {
+            
+            NavigationLink(destination: ReceiveTonView(), label: {
                 Image(systemName: "qrcode.viewfinder")
                     .resizable()
                     .navigationButtonModifier()

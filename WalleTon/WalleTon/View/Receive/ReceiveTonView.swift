@@ -24,6 +24,7 @@ struct ReceiveTonView: View {
                     .padding(.horizontal, 32.0)
                     .padding(.bottom, 50.0)
                 
+                // TODO: QR Code
                 Image(systemName: "qrcode")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -39,7 +40,21 @@ struct ReceiveTonView: View {
                 Text("Your wallet address")
                     .font(.bodyRegular())
                     .foregroundColor(.textSecondary)
+                    .padding(.bottom, 74.0)
                 
+                MainButton(label: {
+                    HStack {
+                        Image(systemName: "square.and.arrow.up")
+                            .foregroundColor(.white)
+                        
+                        Text("Share Wallet Address")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                    }
+                }, action: {
+                    
+                })
+                .padding(.horizontal, 16.0)
             }
         }
     }

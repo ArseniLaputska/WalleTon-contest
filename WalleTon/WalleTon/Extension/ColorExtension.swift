@@ -12,4 +12,6 @@ extension Color {
     static let textSecondary = Color("Secondary")
     static let textField = Color("TextFieldColor")
     static let separator = Color("Separator")
+    static let walletUnderline = Color("WalletUnderline")
+    static let invalidAddress = Color("InvalidAddress")
 }

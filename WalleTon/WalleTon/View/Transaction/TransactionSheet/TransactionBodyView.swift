@@ -48,8 +48,8 @@ struct TransactionBodyView: View {
                 }
                 .padding(.top, transaction.isReceived ? 11.0 : 0)
                 
-                Color.gray
-                    .frame(width: .infinity, height: 0.5)
+                Color.init(white: 0.7)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 1)
                     .padding(.vertical, 11.0)
                 
                 HStack {
@@ -64,8 +64,8 @@ struct TransactionBodyView: View {
                         .foregroundColor(.textSecondary)
                 }
                 
-                Color.gray
-                    .frame(width: .infinity, height: 0.5)
+                Color.init(white: 0.7)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 1)
                     .padding(.vertical, 11.0)
                 
                 HStack {
