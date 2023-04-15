@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct EnterAddressState: View {
+struct EnterAddressView: View {
     
     @Binding var state: SendState
     // TODO: if nil == "Enter Wallet Address or Domain..."
-    @State private var wallet: String = "UQBFsF6_masda_3tE_yRUoqU96asdxuZSP8577EOvo_1234"
+    @Binding var wallet: String
     @State private var isCorrectAddress = true
     
     var body: some View {
@@ -103,6 +103,7 @@ struct EnterAddressState: View {
             }, action: {
                 state = .amountOfTON
             })
+            .disabled(wallet.isEmpty ? true : false)
             .padding(.horizontal, 16.0)
             .padding(.bottom, 10)
         }

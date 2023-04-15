@@ -15,15 +15,17 @@ enum SendState {
 struct SendTonView: View {
     
     @State private var sendState: SendState = .enterAddress
+    @State private var wallet = ""
+    @State private var amount = ""
     
     var body: some View {
         NavigationView {
             ZStack {
                 switch sendState {
                     case .enterAddress:
-                        EnterAddressState(state: $sendState)
+                        EnterAddressView(state: $sendState, wallet: $wallet)
                     case .amountOfTON:
-                        EnterAddressState(state: $sendState)
+                        EnterTONView(wallet: $wallet, amountOfTON: $amount, state: $sendState)
                 }
             }
             .navigationTitle("Send TON")
