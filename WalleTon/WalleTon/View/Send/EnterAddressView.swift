@@ -18,14 +18,19 @@ struct EnterAddressView: View {
         VStack {
 
             HStack {
-                TextEditor(text: $wallet)
-                    .colorMultiply(.textField)
-                    .keyboardType(.alphabet)
-                    .accessibilityHidden(true)
-                    .autocorrectionDisabled(true)
-                    .autocapitalization(.none)
-                    .textFieldStyle(.plain)
-                    .padding(10.0)
+                if wallet.count <= 1 {
+                    TextField("Enter Wallet Address or Domain", text: $wallet)
+                        .padding(10.0)
+                } else {
+                    TextEditor(text: $wallet)
+                        .colorMultiply(.textField)
+                        .keyboardType(.alphabet)
+                        .accessibilityHidden(true)
+                        .autocorrectionDisabled(true)
+                        .autocapitalization(.none)
+                        .textFieldStyle(.plain)
+                        .padding(10.0)
+                }
                 
                 Button(action: {
                     wallet = ""
@@ -35,7 +40,7 @@ struct EnterAddressView: View {
                 .accentColor(.gray)
                 .padding(.trailing, 10.0)
             }
-            .frame(maxWidth: .infinity, maxHeight: 80.0)
+            .frame(maxWidth: .infinity, maxHeight: wallet.count <= 1 ? 50 : 80)
             .background(Color.textField)
             .cornerRadius(10)
             .padding(.horizontal, 16.0)

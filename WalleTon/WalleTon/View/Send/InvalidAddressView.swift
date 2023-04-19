@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InvalidAddressView: View {
     var body: some View {
-        HStack {
+        HStack(spacing: .zero) {
             Image(systemName: "exclamationmark.octagon.fill")
                 .padding(12)
             
