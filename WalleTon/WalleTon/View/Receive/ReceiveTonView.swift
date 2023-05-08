@@ -13,7 +13,7 @@ struct ReceiveTonView: View {
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: .zero) {
                 Text("Receive Toncoin")
                     .font(.title)
                     .fontWeight(.medium)
