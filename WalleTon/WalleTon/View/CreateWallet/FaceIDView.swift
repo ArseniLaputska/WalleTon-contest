@@ -10,7 +10,7 @@ import SwiftUI
 struct FaceIDView: View {
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: .zero) {
                 Image(systemName: "faceid")
                     .resizable()
                     .aspectRatio(contentMode: .fit)

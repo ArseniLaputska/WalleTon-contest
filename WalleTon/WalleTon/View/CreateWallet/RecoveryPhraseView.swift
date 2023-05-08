@@ -17,7 +17,7 @@ struct RecoveryPhraseView: View {
     var body: some View {
         ScrollView {
             ZStack {
-                VStack {
+                VStack(spacing: .zero) {
                     AnimationView(sticker: .recovery)
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: 124, maxHeight: 124)

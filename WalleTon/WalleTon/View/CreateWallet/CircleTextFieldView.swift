@@ -15,7 +15,7 @@ struct PasscodeCircleView: View {
     @State private var showOptions: Bool = false
     
     var body: some View {
-        VStack {
+        VStack(spacing: .zero) {
 
             TextField("", text: $passcode)
                 .keyboardType(.numberPad)

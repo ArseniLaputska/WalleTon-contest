@@ -10,7 +10,7 @@ import SwiftUI
 struct CongratulationsView: View {
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: .zero) {
                 Spacer()
                 
                 AnimationView(sticker: .congratulations)

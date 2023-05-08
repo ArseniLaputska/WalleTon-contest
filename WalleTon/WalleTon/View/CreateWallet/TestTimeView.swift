@@ -16,7 +16,7 @@ struct TestTimeView: View {
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: .zero) {
                 AnimationView(sticker: .testTime)
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 124, maxHeight: 124)

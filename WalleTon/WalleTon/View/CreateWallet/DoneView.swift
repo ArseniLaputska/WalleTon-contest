@@ -10,7 +10,7 @@ import SwiftUI
 struct DoneView: View {
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: .zero) {
                 AnimationView(sticker: .start)
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 124, maxHeight: 124)

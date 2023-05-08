@@ -13,7 +13,7 @@ struct TestTimeTextField: View {
     @Binding var text: String
     
     var body: some View {
-        HStack {
+        HStack(spacing: .zero) {
             Text("\(number)" + ":")
                 .padding(.leading, 20)
                 .foregroundColor(.secondary)

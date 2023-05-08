@@ -10,7 +10,7 @@ import SwiftUI
 struct TouchIDView: View {
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: .zero) {
                 Image(systemName: "touchid")
                     .resizable()
                     .aspectRatio(contentMode: .fit)

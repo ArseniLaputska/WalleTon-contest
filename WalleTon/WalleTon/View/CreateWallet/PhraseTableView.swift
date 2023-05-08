@@ -12,8 +12,8 @@ struct PhraseTableView: View {
     let phrases: [String]
     
     var body: some View {
-        HStack {
-            VStack {
+        HStack(spacing: .zero) {
+            VStack(spacing: .zero) {
                 ForEach(phrases.indices.prefix(12), id: \.self) { index in
                     ColumnPhrase(position: index + 1, title: phrases[index])
                 }
@@ -21,7 +21,7 @@ struct PhraseTableView: View {
             
             Spacer()
             
-            VStack {
+            VStack(spacing: .zero) {
                 ForEach(phrases.indices.suffix(12), id: \.self) { index in
                     ColumnPhrase(position: index + 1, title: phrases[index])
                 }
@@ -36,7 +36,7 @@ struct ColumnPhrase: View {
     let title: String
     
     var body: some View {
-        HStack {
+        HStack(spacing: .zero) {
             Text("\(position).")
                 .frame(maxWidth: 26, maxHeight: 20, alignment: .trailing)
                 .font(.bodyRegular())
