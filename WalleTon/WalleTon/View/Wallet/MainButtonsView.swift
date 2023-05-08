@@ -15,7 +15,7 @@ struct MainButtonsView: View {
     var body: some View {
         HStack {
             MainButton(label: {
-                HStack(alignment: .center) {
+                HStack(alignment: .center, spacing: .zero) {
                     Image(systemName: "arrow.down.left")
                     
                     Text("Receive")
@@ -29,7 +29,7 @@ struct MainButtonsView: View {
             .padding(.trailing, 12.0)
             
             MainButton(label: {
-                HStack {
+                HStack(spacing: .zero) {
                     Image(systemName: "arrow.up.right")
                     
                     Text("Send")

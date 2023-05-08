@@ -31,7 +31,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                    VStack {
+                    VStack(spacing: .zero) {
                         
                         MainNavigationView(mainState: $mainState, user: $user, showTopView: offset > 0, scan: {
                             

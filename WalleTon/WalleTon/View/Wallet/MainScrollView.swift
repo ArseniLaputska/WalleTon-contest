@@ -17,7 +17,7 @@ struct MainScrollView: View {
     var body: some View {
         ScrollView {
             
-            VStack {
+            VStack(spacing: .zero) {
                 MainBody(user: $user, state: $state)
                 
                 MainButtonsView(receive: {
@@ -30,7 +30,7 @@ struct MainScrollView: View {
                 .padding(.bottom, 16.0)
             }
             
-            VStack {
+            VStack(spacing: .zero) {
                 MainScrollContent(state: $state, user: $user, transactions: $transactions)
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

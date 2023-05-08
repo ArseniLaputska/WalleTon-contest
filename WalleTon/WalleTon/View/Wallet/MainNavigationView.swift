@@ -16,7 +16,7 @@ struct MainNavigationView: View {
     var scan: () -> Void
     
     var body: some View {
-        HStack {
+        HStack(spacing: .zero) {
             
             NavigationLink(destination: ReceiveTonView(), label: {
                 Image(systemName: "qrcode.viewfinder")
@@ -31,11 +31,11 @@ struct MainNavigationView: View {
                     if showTopView {
                         
                         withAnimation(.easeInOut(duration: 0.5)) {
-                            HStack {
+                            HStack(spacing: .zero) {
                                 Spacer()
                                 
-                                VStack {
-                                    HStack {
+                                VStack(spacing: .zero) {
+                                    HStack(spacing: .zero) {
                                         AnimationView(sticker: .main)
                                             .frame(width: 16, height: 20)
                                             .aspectRatio(contentMode: .fit)
